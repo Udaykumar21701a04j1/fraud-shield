@@ -43,8 +43,1522 @@
     }
   ],
   "RuleViolation": [
+    {
+      "id": "fbvdeb",
+      "violationID": "VIOL-000000",
+      "claimID": "C00001",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "m1kd8b",
+      "violationID": "VIOL-000001",
+      "claimID": "C00001",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "9uh4gm",
+      "violationID": "VIOL-000002",
+      "claimID": "C00001",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "9wc22u",
+      "violationID": "VIOL-000003",
+      "claimID": "C00003",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "3pfau3",
+      "violationID": "VIOL-000004",
+      "claimID": "C00003",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "8rd45a",
+      "violationID": "VIOL-000005",
+      "claimID": "C00003",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "0cij0e",
+      "violationID": "VIOL-000006",
+      "claimID": "C00006",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "fjvoeq",
+      "violationID": "VIOL-000007",
+      "claimID": "C00006",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "4i5gqj",
+      "violationID": "VIOL-000008",
+      "claimID": "C00007",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "qvkkqc",
+      "violationID": "VIOL-000009",
+      "claimID": "C00007",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ih5c06",
+      "violationID": "VIOL-000010",
+      "claimID": "C00008",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "zxdbcg",
+      "violationID": "VIOL-000011",
+      "claimID": "C00008",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "knuk8u",
+      "violationID": "VIOL-000012",
+      "claimID": "C00009",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "t6di7d",
+      "violationID": "VIOL-000013",
+      "claimID": "C00011",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ipvsrq",
+      "violationID": "VIOL-000014",
+      "claimID": "C00011",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "857gy1",
+      "violationID": "VIOL-000015",
+      "claimID": "C00012",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "xwtil8",
+      "violationID": "VIOL-000016",
+      "claimID": "C00013",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "5dm9kr",
+      "violationID": "VIOL-000017",
+      "claimID": "C00014",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "xyojwq",
+      "violationID": "VIOL-000018",
+      "claimID": "C00015",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ciq75f",
+      "violationID": "VIOL-000019",
+      "claimID": "C00015",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "0lf173",
+      "violationID": "VIOL-000020",
+      "claimID": "C00015",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "g0qyr9",
+      "violationID": "VIOL-000021",
+      "claimID": "C00017",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "vnsvy3",
+      "violationID": "VIOL-000022",
+      "claimID": "C00018",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "1muzy3",
+      "violationID": "VIOL-000023",
+      "claimID": "C00019",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "d1lyua",
+      "violationID": "VIOL-000024",
+      "claimID": "C00020",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "izfkdg",
+      "violationID": "VIOL-000025",
+      "claimID": "C00024",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "6jj86z",
+      "violationID": "VIOL-000026",
+      "claimID": "C00025",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "eh4wsp",
+      "violationID": "VIOL-000027",
+      "claimID": "C00025",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "lr1q5v",
+      "violationID": "VIOL-000028",
+      "claimID": "C00025",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "0m4ffa",
+      "violationID": "VIOL-000029",
+      "claimID": "C00026",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "6t386y",
+      "violationID": "VIOL-000030",
+      "claimID": "C00027",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "23fltj",
+      "violationID": "VIOL-000031",
+      "claimID": "C00028",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "woo8h4",
+      "violationID": "VIOL-000032",
+      "claimID": "C00029",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "kehtsw",
+      "violationID": "VIOL-000033",
+      "claimID": "C00029",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "12kf19",
+      "violationID": "VIOL-000034",
+      "claimID": "C00029",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "497h3i",
+      "violationID": "VIOL-000035",
+      "claimID": "C00030",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "knr5at",
+      "violationID": "VIOL-000036",
+      "claimID": "C00031",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "dt3wq5",
+      "violationID": "VIOL-000037",
+      "claimID": "C00031",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "2hl141",
+      "violationID": "VIOL-000038",
+      "claimID": "C00031",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "k9qi3n",
+      "violationID": "VIOL-000039",
+      "claimID": "C00032",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "3m7h3b",
+      "violationID": "VIOL-000040",
+      "claimID": "C00036",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "9oub2o",
+      "violationID": "VIOL-000041",
+      "claimID": "C00038",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "j9fjus",
+      "violationID": "VIOL-000042",
+      "claimID": "C00038",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "1s4erj",
+      "violationID": "VIOL-000043",
+      "claimID": "C00039",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "iqivqf",
+      "violationID": "VIOL-000044",
+      "claimID": "C00039",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ererz9",
+      "violationID": "VIOL-000045",
+      "claimID": "C00043",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "lkj3wg",
+      "violationID": "VIOL-000046",
+      "claimID": "C00043",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ny24g4",
+      "violationID": "VIOL-000047",
+      "claimID": "C00043",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "1uaey5",
+      "violationID": "VIOL-000048",
+      "claimID": "C00044",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "g8uykz",
+      "violationID": "VIOL-000049",
+      "claimID": "C00047",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "7e6m6n",
+      "violationID": "VIOL-000050",
+      "claimID": "C00048",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "sonsns",
+      "violationID": "VIOL-000051",
+      "claimID": "C00049",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "9fy4yq",
+      "violationID": "VIOL-000052",
+      "claimID": "C00051",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "t0g8dd",
+      "violationID": "VIOL-000053",
+      "claimID": "C00051",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "4tjkfe",
+      "violationID": "VIOL-000054",
+      "claimID": "C00051",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ktrjii",
+      "violationID": "VIOL-000055",
+      "claimID": "C00054",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "7vql0b",
+      "violationID": "VIOL-000056",
+      "claimID": "C00055",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "66hnzi",
+      "violationID": "VIOL-000057",
+      "claimID": "C00058",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "x3l4go",
+      "violationID": "VIOL-000058",
+      "claimID": "C00058",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "yiupj9",
+      "violationID": "VIOL-000059",
+      "claimID": "C00060",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "rn4zkv",
+      "violationID": "VIOL-000060",
+      "claimID": "C00060",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "yat3wh",
+      "violationID": "VIOL-000061",
+      "claimID": "C00060",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "amts9o",
+      "violationID": "VIOL-000062",
+      "claimID": "C00062",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "gh8hh8",
+      "violationID": "VIOL-000063",
+      "claimID": "C00062",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "8cdkl8",
+      "violationID": "VIOL-000064",
+      "claimID": "C00062",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "j9eadk",
+      "violationID": "VIOL-000065",
+      "claimID": "C00065",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "dmqt2r",
+      "violationID": "VIOL-000066",
+      "claimID": "C00065",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "0o3zrd",
+      "violationID": "VIOL-000067",
+      "claimID": "C00065",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ph0y45",
+      "violationID": "VIOL-000068",
+      "claimID": "C00066",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "1b631v",
+      "violationID": "VIOL-000069",
+      "claimID": "C00066",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "96q2ph",
+      "violationID": "VIOL-000070",
+      "claimID": "C00066",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "p5jg93",
+      "violationID": "VIOL-000071",
+      "claimID": "C00067",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "sbijdz",
+      "violationID": "VIOL-000072",
+      "claimID": "C00067",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "lqmld3",
+      "violationID": "VIOL-000073",
+      "claimID": "C00069",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "5ixeag",
+      "violationID": "VIOL-000074",
+      "claimID": "C00070",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "wezlus",
+      "violationID": "VIOL-000075",
+      "claimID": "C00072",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ro1u6i",
+      "violationID": "VIOL-000076",
+      "claimID": "C00072",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "v6e5ln",
+      "violationID": "VIOL-000077",
+      "claimID": "C00073",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "h9co9o",
+      "violationID": "VIOL-000078",
+      "claimID": "C00073",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "wt8ydu",
+      "violationID": "VIOL-000079",
+      "claimID": "C00076",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "aqfoqm",
+      "violationID": "VIOL-000080",
+      "claimID": "C00076",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "lu0aum",
+      "violationID": "VIOL-000081",
+      "claimID": "C00077",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "m4xrmb",
+      "violationID": "VIOL-000082",
+      "claimID": "C00078",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "7vmc11",
+      "violationID": "VIOL-000083",
+      "claimID": "C00078",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "kjxlq2",
+      "violationID": "VIOL-000084",
+      "claimID": "C00079",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "wph6ja",
+      "violationID": "VIOL-000085",
+      "claimID": "C00082",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "2zymbi",
+      "violationID": "VIOL-000086",
+      "claimID": "C00084",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "g23arz",
+      "violationID": "VIOL-000087",
+      "claimID": "C00084",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "nyrrtm",
+      "violationID": "VIOL-000088",
+      "claimID": "C00085",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "kpjy0i",
+      "violationID": "VIOL-000089",
+      "claimID": "C00086",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "sq9cfa",
+      "violationID": "VIOL-000090",
+      "claimID": "C00087",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "41254z",
+      "violationID": "VIOL-000091",
+      "claimID": "C00087",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "unwlnz",
+      "violationID": "VIOL-000092",
+      "claimID": "C00088",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "re9gtv",
+      "violationID": "VIOL-000093",
+      "claimID": "C00089",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "zs4lbg",
+      "violationID": "VIOL-000094",
+      "claimID": "C00090",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "x7s75z",
+      "violationID": "VIOL-000095",
+      "claimID": "C00090",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "w1vngb",
+      "violationID": "VIOL-000096",
+      "claimID": "C00095",
+      "ruleID": "FR002",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "7zukkg",
+      "violationID": "VIOL-000097",
+      "claimID": "C00096",
+      "ruleID": "FR001",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "9jbda5",
+      "violationID": "VIOL-000098",
+      "claimID": "C00096",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "4ux97i",
+      "violationID": "VIOL-000099",
+      "claimID": "C00097",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "hkikwv",
+      "violationID": "VIOL-000100",
+      "claimID": "C00097",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "4ml6h0",
+      "violationID": "VIOL-000101",
+      "claimID": "C00098",
+      "ruleID": "FR003",
+      "violationDate": "2025-12-07T14:51:31.553Z"
+    }
   ],
   "RiskScore": [
+    {
+      "id": "5hcii4",
+      "ScoreID": "RISK-1765119091552-0",
+      "ClaimID": "C00001",
+      "ScoreValue": 86,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.552Z"
+    },
+    {
+      "id": "qcp6hc",
+      "ScoreID": "RISK-1765119091553-1",
+      "ClaimID": "C00002",
+      "ScoreValue": 15,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "qhttm2",
+      "ScoreID": "RISK-1765119091553-2",
+      "ClaimID": "C00003",
+      "ScoreValue": 89,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "06yisg",
+      "ScoreID": "RISK-1765119091553-3",
+      "ClaimID": "C00004",
+      "ScoreValue": 39,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ewaty3",
+      "ScoreID": "RISK-1765119091553-4",
+      "ClaimID": "C00005",
+      "ScoreValue": 90,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "v43fpq",
+      "ScoreID": "RISK-1765119091553-5",
+      "ClaimID": "C00006",
+      "ScoreValue": 53,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "dk1fpl",
+      "ScoreID": "RISK-1765119091553-6",
+      "ClaimID": "C00007",
+      "ScoreValue": 58,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "0khetl",
+      "ScoreID": "RISK-1765119091553-7",
+      "ClaimID": "C00008",
+      "ScoreValue": 29,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "aa302r",
+      "ScoreID": "RISK-1765119091553-8",
+      "ClaimID": "C00009",
+      "ScoreValue": 18,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "5sgo74",
+      "ScoreID": "RISK-1765119091553-9",
+      "ClaimID": "C00010",
+      "ScoreValue": 87,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "t0kmbx",
+      "ScoreID": "RISK-1765119091553-10",
+      "ClaimID": "C00011",
+      "ScoreValue": 61,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "lf7xpj",
+      "ScoreID": "RISK-1765119091553-11",
+      "ClaimID": "C00012",
+      "ScoreValue": 59,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "vuky5y",
+      "ScoreID": "RISK-1765119091553-12",
+      "ClaimID": "C00013",
+      "ScoreValue": 80,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "8p8pj2",
+      "ScoreID": "RISK-1765119091553-13",
+      "ClaimID": "C00014",
+      "ScoreValue": 87,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "3g6pds",
+      "ScoreID": "RISK-1765119091553-14",
+      "ClaimID": "C00015",
+      "ScoreValue": 71,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "6pg8mt",
+      "ScoreID": "RISK-1765119091553-15",
+      "ClaimID": "C00016",
+      "ScoreValue": 70,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "futidd",
+      "ScoreID": "RISK-1765119091553-16",
+      "ClaimID": "C00017",
+      "ScoreValue": 93,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "jiswne",
+      "ScoreID": "RISK-1765119091553-17",
+      "ClaimID": "C00018",
+      "ScoreValue": 17,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "mq6r49",
+      "ScoreID": "RISK-1765119091553-18",
+      "ClaimID": "C00019",
+      "ScoreValue": 96,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "bso3su",
+      "ScoreID": "RISK-1765119091553-19",
+      "ClaimID": "C00020",
+      "ScoreValue": 76,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "dkanhz",
+      "ScoreID": "RISK-1765119091553-20",
+      "ClaimID": "C00021",
+      "ScoreValue": 96,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "w1p91a",
+      "ScoreID": "RISK-1765119091553-21",
+      "ClaimID": "C00022",
+      "ScoreValue": 70,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "uslnjy",
+      "ScoreID": "RISK-1765119091553-22",
+      "ClaimID": "C00023",
+      "ScoreValue": 96,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "19hdgg",
+      "ScoreID": "RISK-1765119091553-23",
+      "ClaimID": "C00024",
+      "ScoreValue": 36,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "wb06cu",
+      "ScoreID": "RISK-1765119091553-24",
+      "ClaimID": "C00025",
+      "ScoreValue": 92,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "exglp2",
+      "ScoreID": "RISK-1765119091553-25",
+      "ClaimID": "C00026",
+      "ScoreValue": 89,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "p2thgu",
+      "ScoreID": "RISK-1765119091553-26",
+      "ClaimID": "C00027",
+      "ScoreValue": 54,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "x5zdin",
+      "ScoreID": "RISK-1765119091553-27",
+      "ClaimID": "C00028",
+      "ScoreValue": 100,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "55p5qt",
+      "ScoreID": "RISK-1765119091553-28",
+      "ClaimID": "C00029",
+      "ScoreValue": 57,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "2qyg31",
+      "ScoreID": "RISK-1765119091553-29",
+      "ClaimID": "C00030",
+      "ScoreValue": 84,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "bdpyz6",
+      "ScoreID": "RISK-1765119091553-30",
+      "ClaimID": "C00031",
+      "ScoreValue": 35,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "pyd00c",
+      "ScoreID": "RISK-1765119091553-31",
+      "ClaimID": "C00032",
+      "ScoreValue": 39,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "hmm1kp",
+      "ScoreID": "RISK-1765119091553-32",
+      "ClaimID": "C00033",
+      "ScoreValue": 94,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "lfps4w",
+      "ScoreID": "RISK-1765119091553-33",
+      "ClaimID": "C00034",
+      "ScoreValue": 41,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "kst3c7",
+      "ScoreID": "RISK-1765119091553-34",
+      "ClaimID": "C00035",
+      "ScoreValue": 39,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "2c4cfb",
+      "ScoreID": "RISK-1765119091553-35",
+      "ClaimID": "C00036",
+      "ScoreValue": 58,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "txcsu8",
+      "ScoreID": "RISK-1765119091553-36",
+      "ClaimID": "C00037",
+      "ScoreValue": 85,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "hhl89x",
+      "ScoreID": "RISK-1765119091553-37",
+      "ClaimID": "C00038",
+      "ScoreValue": 15,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "gc4ie7",
+      "ScoreID": "RISK-1765119091553-38",
+      "ClaimID": "C00039",
+      "ScoreValue": 21,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "4av6y6",
+      "ScoreID": "RISK-1765119091553-39",
+      "ClaimID": "C00040",
+      "ScoreValue": 28,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "qbp5zi",
+      "ScoreID": "RISK-1765119091553-40",
+      "ClaimID": "C00041",
+      "ScoreValue": 30,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "awtdo5",
+      "ScoreID": "RISK-1765119091553-41",
+      "ClaimID": "C00042",
+      "ScoreValue": 80,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "yvq5dk",
+      "ScoreID": "RISK-1765119091553-42",
+      "ClaimID": "C00043",
+      "ScoreValue": 96,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "cery4k",
+      "ScoreID": "RISK-1765119091553-43",
+      "ClaimID": "C00044",
+      "ScoreValue": 71,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "aldh6o",
+      "ScoreID": "RISK-1765119091553-44",
+      "ClaimID": "C00045",
+      "ScoreValue": 16,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "4mz230",
+      "ScoreID": "RISK-1765119091553-45",
+      "ClaimID": "C00046",
+      "ScoreValue": 86,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "27k7nu",
+      "ScoreID": "RISK-1765119091553-46",
+      "ClaimID": "C00047",
+      "ScoreValue": 36,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "nwx5pn",
+      "ScoreID": "RISK-1765119091553-47",
+      "ClaimID": "C00048",
+      "ScoreValue": 55,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ojktea",
+      "ScoreID": "RISK-1765119091553-48",
+      "ClaimID": "C00049",
+      "ScoreValue": 85,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "jrzm2l",
+      "ScoreID": "RISK-1765119091553-49",
+      "ClaimID": "C00050",
+      "ScoreValue": 88,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "a0a55w",
+      "ScoreID": "RISK-1765119091553-50",
+      "ClaimID": "C00051",
+      "ScoreValue": 30,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "fkoz4p",
+      "ScoreID": "RISK-1765119091553-51",
+      "ClaimID": "C00052",
+      "ScoreValue": 45,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "bsmuqt",
+      "ScoreID": "RISK-1765119091553-52",
+      "ClaimID": "C00053",
+      "ScoreValue": 24,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "it1358",
+      "ScoreID": "RISK-1765119091553-53",
+      "ClaimID": "C00054",
+      "ScoreValue": 41,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "3a1zlf",
+      "ScoreID": "RISK-1765119091553-54",
+      "ClaimID": "C00055",
+      "ScoreValue": 29,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "uorume",
+      "ScoreID": "RISK-1765119091553-55",
+      "ClaimID": "C00056",
+      "ScoreValue": 52,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "aitm52",
+      "ScoreID": "RISK-1765119091553-56",
+      "ClaimID": "C00057",
+      "ScoreValue": 89,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "2mx03b",
+      "ScoreID": "RISK-1765119091553-57",
+      "ClaimID": "C00058",
+      "ScoreValue": 40,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "tbqww2",
+      "ScoreID": "RISK-1765119091553-58",
+      "ClaimID": "C00059",
+      "ScoreValue": 66,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "zp2p96",
+      "ScoreID": "RISK-1765119091553-59",
+      "ClaimID": "C00060",
+      "ScoreValue": 54,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "iq1mi4",
+      "ScoreID": "RISK-1765119091553-60",
+      "ClaimID": "C00061",
+      "ScoreValue": 78,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "pcw7va",
+      "ScoreID": "RISK-1765119091553-61",
+      "ClaimID": "C00062",
+      "ScoreValue": 95,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "2gdbt0",
+      "ScoreID": "RISK-1765119091553-62",
+      "ClaimID": "C00063",
+      "ScoreValue": 15,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "9hl9kt",
+      "ScoreID": "RISK-1765119091553-63",
+      "ClaimID": "C00064",
+      "ScoreValue": 46,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "xlu9b7",
+      "ScoreID": "RISK-1765119091553-64",
+      "ClaimID": "C00065",
+      "ScoreValue": 62,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "xxm80i",
+      "ScoreID": "RISK-1765119091553-65",
+      "ClaimID": "C00066",
+      "ScoreValue": 23,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "f3jh88",
+      "ScoreID": "RISK-1765119091553-66",
+      "ClaimID": "C00067",
+      "ScoreValue": 35,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "6nwglx",
+      "ScoreID": "RISK-1765119091553-67",
+      "ClaimID": "C00068",
+      "ScoreValue": 16,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "85zr8g",
+      "ScoreID": "RISK-1765119091553-68",
+      "ClaimID": "C00069",
+      "ScoreValue": 66,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "mkaivn",
+      "ScoreID": "RISK-1765119091553-69",
+      "ClaimID": "C00070",
+      "ScoreValue": 15,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "5qo7r6",
+      "ScoreID": "RISK-1765119091553-70",
+      "ClaimID": "C00071",
+      "ScoreValue": 45,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "gu8y1h",
+      "ScoreID": "RISK-1765119091553-71",
+      "ClaimID": "C00072",
+      "ScoreValue": 29,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "y4wfk4",
+      "ScoreID": "RISK-1765119091553-72",
+      "ClaimID": "C00073",
+      "ScoreValue": 99,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "8muam5",
+      "ScoreID": "RISK-1765119091553-73",
+      "ClaimID": "C00074",
+      "ScoreValue": 60,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "w2qbe7",
+      "ScoreID": "RISK-1765119091553-74",
+      "ClaimID": "C00075",
+      "ScoreValue": 46,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "0m70bo",
+      "ScoreID": "RISK-1765119091553-75",
+      "ClaimID": "C00076",
+      "ScoreValue": 66,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "p0twbm",
+      "ScoreID": "RISK-1765119091553-76",
+      "ClaimID": "C00077",
+      "ScoreValue": 47,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "h33tw6",
+      "ScoreID": "RISK-1765119091553-77",
+      "ClaimID": "C00078",
+      "ScoreValue": 92,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "yeg5mt",
+      "ScoreID": "RISK-1765119091553-78",
+      "ClaimID": "C00079",
+      "ScoreValue": 63,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "zl5rqa",
+      "ScoreID": "RISK-1765119091553-79",
+      "ClaimID": "C00080",
+      "ScoreValue": 10,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "ctiho4",
+      "ScoreID": "RISK-1765119091553-80",
+      "ClaimID": "C00081",
+      "ScoreValue": 78,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "s038st",
+      "ScoreID": "RISK-1765119091553-81",
+      "ClaimID": "C00082",
+      "ScoreValue": 98,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "8pez61",
+      "ScoreID": "RISK-1765119091553-82",
+      "ClaimID": "C00083",
+      "ScoreValue": 53,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "7byynm",
+      "ScoreID": "RISK-1765119091553-83",
+      "ClaimID": "C00084",
+      "ScoreValue": 27,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "5z43rh",
+      "ScoreID": "RISK-1765119091553-84",
+      "ClaimID": "C00085",
+      "ScoreValue": 52,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "oqppoc",
+      "ScoreID": "RISK-1765119091553-85",
+      "ClaimID": "C00086",
+      "ScoreValue": 66,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "42dq55",
+      "ScoreID": "RISK-1765119091553-86",
+      "ClaimID": "C00087",
+      "ScoreValue": 52,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "cmxydp",
+      "ScoreID": "RISK-1765119091553-87",
+      "ClaimID": "C00088",
+      "ScoreValue": 55,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "hcphos",
+      "ScoreID": "RISK-1765119091553-88",
+      "ClaimID": "C00089",
+      "ScoreValue": 46,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "8881n5",
+      "ScoreID": "RISK-1765119091553-89",
+      "ClaimID": "C00090",
+      "ScoreValue": 60,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "rq3ag0",
+      "ScoreID": "RISK-1765119091553-90",
+      "ClaimID": "C00091",
+      "ScoreValue": 24,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "1u9i4w",
+      "ScoreID": "RISK-1765119091553-91",
+      "ClaimID": "C00092",
+      "ScoreValue": 39,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "8liop7",
+      "ScoreID": "RISK-1765119091553-92",
+      "ClaimID": "C00093",
+      "ScoreValue": 34,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "jvl86f",
+      "ScoreID": "RISK-1765119091553-93",
+      "ClaimID": "C00094",
+      "ScoreValue": 44,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "m4xe8k",
+      "ScoreID": "RISK-1765119091553-94",
+      "ClaimID": "C00095",
+      "ScoreValue": 99,
+      "RiskLevel": "MEDIUM",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "c8lo7b",
+      "ScoreID": "RISK-1765119091553-95",
+      "ClaimID": "C00096",
+      "ScoreValue": 87,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "740lvc",
+      "ScoreID": "RISK-1765119091553-96",
+      "ClaimID": "C00097",
+      "ScoreValue": 85,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "muqvcn",
+      "ScoreID": "RISK-1765119091553-97",
+      "ClaimID": "C00098",
+      "ScoreValue": 48,
+      "RiskLevel": "HIGH",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "klgmmm",
+      "ScoreID": "RISK-1765119091553-98",
+      "ClaimID": "C00099",
+      "ScoreValue": 35,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    },
+    {
+      "id": "nkt1ge",
+      "ScoreID": "RISK-1765119091553-99",
+      "ClaimID": "C00100",
+      "ScoreValue": 57,
+      "RiskLevel": "LOW",
+      "AnalysisDate": "2025-12-07T14:51:31.553Z"
+    }
   ],
   "Claims": [
     {
@@ -54,8 +1568,7 @@
       "Amount": 170365,
       "Status": "Approved",
       "PolicyID": "POLA100",
-      "HospitalName": "City General Hospital",
-      "id": "a859"
+      "HospitalName": "City General Hospital"
     },
     {
       "ClaimID": "C00002",
@@ -64,8 +1577,7 @@
       "Amount": 55258.53,
       "Status": "Approved",
       "PolicyID": "POLB201",
-      "HospitalName": "Regional Pharmacy",
-      "id": "4457"
+      "HospitalName": "Regional Pharmacy"
     },
     {
       "ClaimID": "C00003",
@@ -74,8 +1586,7 @@
       "Amount": 147536,
       "Status": "Approved",
       "PolicyID": "POLC302",
-      "HospitalName": "St. Anthony's Surgical",
-      "id": "fd83"
+      "HospitalName": "St. Anthony's Surgical"
     },
     {
       "ClaimID": "C00004",
@@ -84,8 +1595,7 @@
       "Amount": 18991.54,
       "Status": "Rejected",
       "PolicyID": "POLD403",
-      "HospitalName": "Dr. Evans Dental",
-      "id": "eeed"
+      "HospitalName": "Dr. Evans Dental"
     },
     {
       "ClaimID": "C00005",
@@ -94,8 +1604,7 @@
       "Amount": 365701.3,
       "Status": "Rejected",
       "PolicyID": "POLE504",
-      "HospitalName": "Auto Repair Specialist",
-      "id": "f05d"
+      "HospitalName": "Auto Repair Specialist"
     },
     {
       "ClaimID": "C00006",
@@ -104,8 +1613,7 @@
       "Amount": 81300.7,
       "Status": "Approved",
       "PolicyID": "POLF605",
-      "HospitalName": "Riverbend Clinic",
-      "id": "b31b"
+      "HospitalName": "Riverbend Clinic"
     },
     {
       "ClaimID": "C00007",
@@ -114,8 +1622,7 @@
       "Amount": 159464.3,
       "Status": "Rejected",
       "PolicyID": "POLG706",
-      "HospitalName": "Home Incident Report",
-      "id": "d558"
+      "HospitalName": "Home Incident Report"
     },
     {
       "ClaimID": "C00008",
@@ -124,8 +1631,7 @@
       "Amount": 466961.3,
       "Status": "Rejected",
       "PolicyID": "POLH807",
-      "HospitalName": "Policyholder Residence",
-      "id": "6389"
+      "HospitalName": "Policyholder Residence"
     },
     {
       "ClaimID": "C00009",
@@ -134,8 +1640,7 @@
       "Amount": 399588,
       "Status": "Rejected",
       "PolicyID": "POLI908",
-      "HospitalName": "Pet Health Vet",
-      "id": "531d"
+      "HospitalName": "Pet Health Vet"
     },
     {
       "ClaimID": "C00010",
@@ -144,8 +1649,7 @@
       "Amount": 327149.7,
       "Status": "Approved",
       "PolicyID": "POLJ019",
-      "HospitalName": "Metro General Hospital",
-      "id": "b071"
+      "HospitalName": "Metro General Hospital"
     },
     {
       "ClaimID": "C00011",
@@ -154,8 +1658,7 @@
       "Amount": 9533.2,
       "Status": "Rejected",
       "PolicyID": "POLA110",
-      "HospitalName": "Quick Care",
-      "id": "04f6"
+      "HospitalName": "Quick Care"
     },
     {
       "ClaimID": "C00012",
@@ -164,8 +1667,7 @@
       "Amount": 477154.1,
       "Status": "Approved",
       "PolicyID": "POLB211",
-      "HospitalName": "City Physical Therapy",
-      "id": "7dce"
+      "HospitalName": "City Physical Therapy"
     },
     {
       "ClaimID": "C00013",
@@ -174,8 +1676,7 @@
       "Amount": 495092.3,
       "Status": "Rejected",
       "PolicyID": "POLC312",
-      "HospitalName": "Lab Test Center",
-      "id": "fd9a"
+      "HospitalName": "Lab Test Center"
     },
     {
       "ClaimID": "C00014",
@@ -184,8 +1685,7 @@
       "Amount": 429888.7,
       "Status": "Approved",
       "PolicyID": "POLD413",
-      "HospitalName": "State Highway Collision",
-      "id": "f077"
+      "HospitalName": "State Highway Collision"
     },
     {
       "ClaimID": "C00015",
@@ -194,8 +1694,7 @@
       "Amount": 315156.7,
       "Status": "Rejected",
       "PolicyID": "POLE514",
-      "HospitalName": "Private Practice Dr.",
-      "id": "9455"
+      "HospitalName": "Private Practice Dr."
     },
     {
       "ClaimID": "C00016",
@@ -204,8 +1703,7 @@
       "Amount": 381910,
       "Status": "Rejected",
       "PolicyID": "POLF615",
-      "HospitalName": "Prescription Refill",
-      "id": "26d5"
+      "HospitalName": "Prescription Refill"
     },
     {
       "ClaimID": "C00017",
@@ -214,8 +1712,7 @@
       "Amount": 345926.2,
       "Status": "Rejected",
       "PolicyID": "POLG716",
-      "HospitalName": "Specialist Clinic B",
-      "id": "3ec2"
+      "HospitalName": "Specialist Clinic B"
     },
     {
       "ClaimID": "C00018",
@@ -224,8 +1721,7 @@
       "Amount": 370948.3,
       "Status": "Rejected",
       "PolicyID": "POLH817",
-      "HospitalName": "Policyholder Car",
-      "id": "01ee"
+      "HospitalName": "Policyholder Car"
     },
     {
       "ClaimID": "C00019",
@@ -234,8 +1730,7 @@
       "Amount": 10438.61,
       "Status": "Rejected",
       "PolicyID": "POLI918",
-      "HospitalName": "Smallest Claim Ever",
-      "id": "0d63"
+      "HospitalName": "Smallest Claim Ever"
     },
     {
       "ClaimID": "C00020",
@@ -244,8 +1739,7 @@
       "Amount": 83752.61,
       "Status": "Rejected",
       "PolicyID": "POLJ029",
-      "HospitalName": "General Surgeon’s Office",
-      "id": "4622"
+      "HospitalName": "General Surgeon’s Office"
     },
     {
       "ClaimID": "C00021",
@@ -254,8 +1748,7 @@
       "Amount": 484062.7,
       "Status": "Rejected",
       "PolicyID": "POLA120",
-      "HospitalName": "Local Urgent Care",
-      "id": "19b3"
+      "HospitalName": "Local Urgent Care"
     },
     {
       "ClaimID": "C00022",
@@ -264,8 +1757,7 @@
       "Amount": 394738.4,
       "Status": "Rejected",
       "PolicyID": "POLB221",
-      "HospitalName": "Mercy Hospital Wing",
-      "id": "3882"
+      "HospitalName": "Mercy Hospital Wing"
     },
     {
       "ClaimID": "C00023",
@@ -274,8 +1766,7 @@
       "Amount": 177370.5,
       "Status": "Rejected",
       "PolicyID": "POLC322",
-      "HospitalName": "Optometrist's Office",
-      "id": "c622"
+      "HospitalName": "Optometrist's Office"
     },
     {
       "ClaimID": "C00024",
@@ -284,8 +1775,7 @@
       "Amount": 303377.1,
       "Status": "Rejected",
       "PolicyID": "POLD423",
-      "HospitalName": "Auto Body Shop 2",
-      "id": "ec82"
+      "HospitalName": "Auto Body Shop 2"
     },
     {
       "ClaimID": "C00025",
@@ -294,8 +1784,7 @@
       "Amount": 199959.2,
       "Status": "Approved",
       "PolicyID": "POLE524",
-      "HospitalName": "Family Doctor A",
-      "id": "8428"
+      "HospitalName": "Family Doctor A"
     },
     {
       "ClaimID": "C00026",
@@ -304,8 +1793,7 @@
       "Amount": 436577.6,
       "Status": "Rejected",
       "PolicyID": "POLF625",
-      "HospitalName": "Mail-order Medication",
-      "id": "3046"
+      "HospitalName": "Mail-order Medication"
     },
     {
       "ClaimID": "C00027",
@@ -314,8 +1802,7 @@
       "Amount": 78738.61,
       "Status": "Approved",
       "PolicyID": "POLG726",
-      "HospitalName": "Trauma Center A",
-      "id": "9a2f"
+      "HospitalName": "Trauma Center A"
     },
     {
       "ClaimID": "C00028",
@@ -324,8 +1811,7 @@
       "Amount": 255518.9,
       "Status": "Rejected",
       "PolicyID": "POLH827",
-      "HospitalName": "Policyholder Boat",
-      "id": "4bb7"
+      "HospitalName": "Policyholder Boat"
     },
     {
       "ClaimID": "C00029",
@@ -334,8 +1820,7 @@
       "Amount": 210101,
       "Status": "Approved",
       "PolicyID": "POLI928",
-      "HospitalName": "Micro-claim",
-      "id": "9589"
+      "HospitalName": "Micro-claim"
     },
     {
       "ClaimID": "C00030",
@@ -344,8 +1829,7 @@
       "Amount": 469504.8,
       "Status": "Rejected",
       "PolicyID": "POLJ039",
-      "HospitalName": "Community Wellness",
-      "id": "b40f"
+      "HospitalName": "Community Wellness"
     },
     {
       "ClaimID": "C00031",
@@ -354,8 +1838,7 @@
       "Amount": 124208.1,
       "Status": "Approved",
       "PolicyID": "POLA130",
-      "HospitalName": "General Practitioner",
-      "id": "2717"
+      "HospitalName": "General Practitioner"
     },
     {
       "ClaimID": "C00032",
@@ -364,8 +1847,7 @@
       "Amount": 171849.2,
       "Status": "Approved",
       "PolicyID": "POLB231",
-      "HospitalName": "Large Medical Center",
-      "id": "222a"
+      "HospitalName": "Large Medical Center"
     },
     {
       "ClaimID": "C00033",
@@ -374,8 +1856,7 @@
       "Amount": 343696.9,
       "Status": "Approved",
       "PolicyID": "POLC332",
-      "HospitalName": "Physiotherapy B",
-      "id": "5ced"
+      "HospitalName": "Physiotherapy B"
     },
     {
       "ClaimID": "C00034",
@@ -384,8 +1865,7 @@
       "Amount": 99896.55,
       "Status": "Approved",
       "PolicyID": "POLD433",
-      "HospitalName": "Apartment Fire Damage",
-      "id": "a7b3"
+      "HospitalName": "Apartment Fire Damage"
     },
     {
       "ClaimID": "C00035",
@@ -394,8 +1874,7 @@
       "Amount": 146097.2,
       "Status": "Rejected",
       "PolicyID": "POLE534",
-      "HospitalName": "Specialist Referral",
-      "id": "0f0e"
+      "HospitalName": "Specialist Referral"
     },
     {
       "ClaimID": "C00036",
@@ -404,8 +1883,7 @@
       "Amount": 364196.4,
       "Status": "Approved",
       "PolicyID": "POLF635",
-      "HospitalName": "Outpatient Surgery",
-      "id": "8b8c"
+      "HospitalName": "Outpatient Surgery"
     },
     {
       "ClaimID": "C00037",
@@ -414,8 +1892,7 @@
       "Amount": 234558.5,
       "Status": "Approved",
       "PolicyID": "POLG736",
-      "HospitalName": "Emergency Room C",
-      "id": "e782"
+      "HospitalName": "Emergency Room C"
     },
     {
       "ClaimID": "C00038",
@@ -424,8 +1901,7 @@
       "Amount": 392993,
       "Status": "Approved",
       "PolicyID": "POLH837",
-      "HospitalName": "Dental Specialist",
-      "id": "fadd"
+      "HospitalName": "Dental Specialist"
     },
     {
       "ClaimID": "C00039",
@@ -434,8 +1910,7 @@
       "Amount": 91081.41,
       "Status": "Approved",
       "PolicyID": "POLI938",
-      "HospitalName": "Minor Illness Claim",
-      "id": "92bc"
+      "HospitalName": "Minor Illness Claim"
     },
     {
       "ClaimID": "C00040",
@@ -444,8 +1919,7 @@
       "Amount": 389000.5,
       "Status": "Approved",
       "PolicyID": "POLJ049",
-      "HospitalName": "Elite Surgical Unit",
-      "id": "eba6"
+      "HospitalName": "Elite Surgical Unit"
     },
     {
       "ClaimID": "C00041",
@@ -454,8 +1928,7 @@
       "Amount": 112102.4,
       "Status": "Rejected",
       "PolicyID": "POLA140",
-      "HospitalName": "Pediatric Clinic",
-      "id": "2bf8"
+      "HospitalName": "Pediatric Clinic"
     },
     {
       "ClaimID": "C00042",
@@ -464,8 +1937,7 @@
       "Amount": 373984.6,
       "Status": "Approved",
       "PolicyID": "POLB241",
-      "HospitalName": "Regional Health Center",
-      "id": "22d8"
+      "HospitalName": "Regional Health Center"
     },
     {
       "ClaimID": "C00043",
@@ -474,8 +1946,7 @@
       "Amount": 10912.73,
       "Status": "Rejected",
       "PolicyID": "POLC342",
-      "HospitalName": "Walk-in Clinic D",
-      "id": "41dd"
+      "HospitalName": "Walk-in Clinic D"
     },
     {
       "ClaimID": "C00044",
@@ -484,8 +1955,7 @@
       "Amount": 248052,
       "Status": "Approved",
       "PolicyID": "POLD443",
-      "HospitalName": "Auto Accident Site 3",
-      "id": "6143"
+      "HospitalName": "Auto Accident Site 3"
     },
     {
       "ClaimID": "C00045",
@@ -494,8 +1964,7 @@
       "Amount": 471461.3,
       "Status": "Approved",
       "PolicyID": "POLE544",
-      "HospitalName": "Specialist Referral 2",
-      "id": "f4ed"
+      "HospitalName": "Specialist Referral 2"
     },
     {
       "ClaimID": "C00046",
@@ -504,8 +1973,7 @@
       "Amount": 321602,
       "Status": "Rejected",
       "PolicyID": "POLA100",
-      "HospitalName": "City General Hospital",
-      "id": "4ae4"
+      "HospitalName": "City General Hospital"
     },
     {
       "ClaimID": "C00047",
@@ -514,8 +1982,7 @@
       "Amount": 226439.9,
       "Status": "Approved",
       "PolicyID": "POLB201",
-      "HospitalName": "Regional Pharmacy",
-      "id": "0baa"
+      "HospitalName": "Regional Pharmacy"
     },
     {
       "ClaimID": "C00048",
@@ -524,8 +1991,7 @@
       "Amount": 496559.6,
       "Status": "Rejected",
       "PolicyID": "POLC302",
-      "HospitalName": "St. Anthony's Surgical",
-      "id": "4c0d"
+      "HospitalName": "St. Anthony's Surgical"
     },
     {
       "ClaimID": "C00049",
@@ -534,8 +2000,7 @@
       "Amount": 171649.3,
       "Status": "Rejected",
       "PolicyID": "POLD403",
-      "HospitalName": "Dr. Evans Dental",
-      "id": "f4b8"
+      "HospitalName": "Dr. Evans Dental"
     },
     {
       "ClaimID": "C00050",
@@ -544,8 +2009,7 @@
       "Amount": 432885.5,
       "Status": "Approved",
       "PolicyID": "POLE504",
-      "HospitalName": "Auto Repair Specialist",
-      "id": "f12f"
+      "HospitalName": "Auto Repair Specialist"
     },
     {
       "ClaimID": "C00051",
@@ -554,8 +2018,7 @@
       "Amount": 253788.1,
       "Status": "Rejected",
       "PolicyID": "POLF605",
-      "HospitalName": "Riverbend Clinic",
-      "id": "8733"
+      "HospitalName": "Riverbend Clinic"
     },
     {
       "ClaimID": "C00052",
@@ -564,8 +2027,7 @@
       "Amount": 356959,
       "Status": "Rejected",
       "PolicyID": "POLG706",
-      "HospitalName": "Home Incident Report",
-      "id": "f4fc"
+      "HospitalName": "Home Incident Report"
     },
     {
       "ClaimID": "C00053",
@@ -574,8 +2036,7 @@
       "Amount": 263419.4,
       "Status": "Rejected",
       "PolicyID": "POLH807",
-      "HospitalName": "Policyholder Residence",
-      "id": "ed9e"
+      "HospitalName": "Policyholder Residence"
     },
     {
       "ClaimID": "C00054",
@@ -584,8 +2045,7 @@
       "Amount": 212050,
       "Status": "Rejected",
       "PolicyID": "POLI908",
-      "HospitalName": "Pet Health Vet",
-      "id": "6c95"
+      "HospitalName": "Pet Health Vet"
     },
     {
       "ClaimID": "C00055",
@@ -594,10 +2054,727 @@
       "Amount": 252769.1,
       "Status": "Rejected",
       "PolicyID": "POLJ019",
-      "HospitalName": "Metro General Hospital",
-      "id": "6c14"
+      "HospitalName": "Metro General Hospital"
+    },
+    {
+      "ClaimID": "C00056",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-07-23",
+      "Amount": 244719.9,
+      "Status": "Approved",
+      "PolicyID": "POLA110",
+      "HospitalName": "Quick Care"
+    },
+    {
+      "ClaimID": "C00057",
+      "PolicyHolderID": "PH0012",
+      "ClaimDate": "2025-02-14",
+      "Amount": 97911.92,
+      "Status": "Approved",
+      "PolicyID": "POLB211",
+      "HospitalName": "City Physical Therapy"
+    },
+    {
+      "ClaimID": "C00058",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-10-02",
+      "Amount": 287774.2,
+      "Status": "Rejected",
+      "PolicyID": "POLC312",
+      "HospitalName": "Lab Test Center"
+    },
+    {
+      "ClaimID": "C00059",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2024-12-25",
+      "Amount": 48489.91,
+      "Status": "Approved",
+      "PolicyID": "POLD413",
+      "HospitalName": "State Highway Collision"
+    },
+    {
+      "ClaimID": "C00060",
+      "PolicyHolderID": "PH0012",
+      "ClaimDate": "2025-04-21",
+      "Amount": 477731.1,
+      "Status": "Rejected",
+      "PolicyID": "POLE514",
+      "HospitalName": "Private Practice Dr."
+    },
+    {
+      "ClaimID": "C00061",
+      "PolicyHolderID": "PH0016",
+      "ClaimDate": "2025-11-06",
+      "Amount": 321296,
+      "Status": "Rejected",
+      "PolicyID": "POLF615",
+      "HospitalName": "Prescription Refill"
+    },
+    {
+      "ClaimID": "C00062",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-01-18",
+      "Amount": 443564.6,
+      "Status": "Rejected",
+      "PolicyID": "POLG716",
+      "HospitalName": "Specialist Clinic B"
+    },
+    {
+      "ClaimID": "C00063",
+      "PolicyHolderID": "PH0002",
+      "ClaimDate": "2025-01-02",
+      "Amount": 328810.5,
+      "Status": "Approved",
+      "PolicyID": "POLH817",
+      "HospitalName": "Policyholder Car"
+    },
+    {
+      "ClaimID": "C00064",
+      "PolicyHolderID": "PH0006",
+      "ClaimDate": "2025-01-09",
+      "Amount": 275446.6,
+      "Status": "Approved",
+      "PolicyID": "POLI918",
+      "HospitalName": "Smallest Claim Ever"
+    },
+    {
+      "ClaimID": "C00065",
+      "PolicyHolderID": "PH0018",
+      "ClaimDate": "2025-04-29",
+      "Amount": 329879.8,
+      "Status": "Approved",
+      "PolicyID": "POLJ029",
+      "HospitalName": "General Surgeon’s Office"
+    },
+    {
+      "ClaimID": "C00066",
+      "PolicyHolderID": "PH0001",
+      "ClaimDate": "2025-11-23",
+      "Amount": 308461.1,
+      "Status": "Approved",
+      "PolicyID": "POLA120",
+      "HospitalName": "Local Urgent Care"
+    },
+    {
+      "ClaimID": "C00067",
+      "PolicyHolderID": "PH0002",
+      "ClaimDate": "2025-10-09",
+      "Amount": 493638.9,
+      "Status": "Approved",
+      "PolicyID": "POLB221",
+      "HospitalName": "Mercy Hospital Wing"
+    },
+    {
+      "ClaimID": "C00068",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2025-09-28",
+      "Amount": 188850.7,
+      "Status": "Approved",
+      "PolicyID": "POLC322",
+      "HospitalName": "Optometrist's Office"
+    },
+    {
+      "ClaimID": "C00069",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2024-12-10",
+      "Amount": 421939.1,
+      "Status": "Rejected",
+      "PolicyID": "POLD423",
+      "HospitalName": "Auto Body Shop 2"
+    },
+    {
+      "ClaimID": "C00070",
+      "PolicyHolderID": "PH0008",
+      "ClaimDate": "2025-11-09",
+      "Amount": 309016.3,
+      "Status": "Rejected",
+      "PolicyID": "POLE524",
+      "HospitalName": "Family Doctor A"
+    },
+    {
+      "ClaimID": "C00071",
+      "PolicyHolderID": "PH0012",
+      "ClaimDate": "2025-06-11",
+      "Amount": 157842.25,
+      "Status": "Approved",
+      "PolicyID": "POLF625",
+      "HospitalName": "Mail-order Medication"
+    },
+    {
+      "ClaimID": "C00072",
+      "PolicyHolderID": "PH0003",
+      "ClaimDate": "2025-02-20",
+      "Amount": 41250.5,
+      "Status": "Rejected",
+      "PolicyID": "POLG726",
+      "HospitalName": "Trauma Center A"
+    },
+    {
+      "ClaimID": "C00073",
+      "PolicyHolderID": "PH0010",
+      "ClaimDate": "2025-08-03",
+      "Amount": 203900.75,
+      "Status": "Approved",
+      "PolicyID": "POLH827",
+      "HospitalName": "Policyholder Boat"
+    },
+    {
+      "ClaimID": "C00074",
+      "PolicyHolderID": "PH0014",
+      "ClaimDate": "2024-11-29",
+      "Amount": 8921,
+      "Status": "Rejected",
+      "PolicyID": "POLI928",
+      "HospitalName": "Micro-claim"
+    },
+    {
+      "ClaimID": "C00075",
+      "PolicyHolderID": "PH0009",
+      "ClaimDate": "2025-03-13",
+      "Amount": 126450.6,
+      "Status": "Approved",
+      "PolicyID": "POLJ039",
+      "HospitalName": "Community Wellness"
+    },
+    {
+      "ClaimID": "C00076",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-09-01",
+      "Amount": 341120.9,
+      "Status": "Rejected",
+      "PolicyID": "POLA130",
+      "HospitalName": "General Practitioner"
+    },
+    {
+      "ClaimID": "C00077",
+      "PolicyHolderID": "PH0004",
+      "ClaimDate": "2025-05-08",
+      "Amount": 55823.45,
+      "Status": "Approved",
+      "PolicyID": "POLB231",
+      "HospitalName": "Large Medical Center"
+    },
+    {
+      "ClaimID": "C00078",
+      "PolicyHolderID": "PH0018",
+      "ClaimDate": "2025-07-28",
+      "Amount": 278400,
+      "Status": "Rejected",
+      "PolicyID": "POLC332",
+      "HospitalName": "Physiotherapy B"
+    },
+    {
+      "ClaimID": "C00079",
+      "PolicyHolderID": "PH0002",
+      "ClaimDate": "2024-12-18",
+      "Amount": 74200,
+      "Status": "Approved",
+      "PolicyID": "POLD433",
+      "HospitalName": "Apartment Fire Damage"
+    },
+    {
+      "ClaimID": "C00080",
+      "PolicyHolderID": "PH0016",
+      "ClaimDate": "2025-10-30",
+      "Amount": 199999.99,
+      "Status": "Rejected",
+      "PolicyID": "POLE534",
+      "HospitalName": "Specialist Referral"
+    },
+    {
+      "ClaimID": "C00081",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2025-01-21",
+      "Amount": 91050,
+      "Status": "Approved",
+      "PolicyID": "POLF635",
+      "HospitalName": "Outpatient Surgery"
+    },
+    {
+      "ClaimID": "C00082",
+      "PolicyHolderID": "PH0013",
+      "ClaimDate": "2025-04-05",
+      "Amount": 133220.2,
+      "Status": "Rejected",
+      "PolicyID": "POLG736",
+      "HospitalName": "Emergency Room C"
+    },
+    {
+      "ClaimID": "C00083",
+      "PolicyHolderID": "PH0001",
+      "ClaimDate": "2025-06-30",
+      "Amount": 4600,
+      "Status": "Approved",
+      "PolicyID": "POLH837",
+      "HospitalName": "Dental Specialist"
+    },
+    {
+      "ClaimID": "C00084",
+      "PolicyHolderID": "PH0019",
+      "ClaimDate": "2024-12-05",
+      "Amount": 122500.55,
+      "Status": "Rejected",
+      "PolicyID": "POLI938",
+      "HospitalName": "Minor Illness Claim"
+    },
+    {
+      "ClaimID": "C00085",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-08-11",
+      "Amount": 50777.5,
+      "Status": "Approved",
+      "PolicyID": "POLJ049",
+      "HospitalName": "Elite Surgical Unit"
+    },
+    {
+      "ClaimID": "C00086",
+      "PolicyHolderID": "PH0008",
+      "ClaimDate": "2025-02-28",
+      "Amount": 278901.3,
+      "Status": "Rejected",
+      "PolicyID": "POLA140",
+      "HospitalName": "Pediatric Clinic"
+    },
+    {
+      "ClaimID": "C00087",
+      "PolicyHolderID": "PH0014",
+      "ClaimDate": "2025-07-18",
+      "Amount": 190500,
+      "Status": "Approved",
+      "PolicyID": "POLB241",
+      "HospitalName": "Regional Health Center"
+    },
+    {
+      "ClaimID": "C00088",
+      "PolicyHolderID": "PH0017",
+      "ClaimDate": "2025-01-26",
+      "Amount": 393325.8,
+      "Status": "Rejected",
+      "PolicyID": "POLC342",
+      "HospitalName": "Walk-in Clinic D"
+    },
+    {
+      "ClaimID": "C00089",
+      "PolicyHolderID": "PH0006",
+      "ClaimDate": "2025-09-04",
+      "Amount": 119999.95,
+      "Status": "Approved",
+      "PolicyID": "POLD443",
+      "HospitalName": "Auto Accident Site 3"
+    },
+    {
+      "ClaimID": "C00090",
+      "PolicyHolderID": "PH0003",
+      "ClaimDate": "2024-12-08",
+      "Amount": 377734.7,
+      "Status": "Rejected",
+      "PolicyID": "POLE544",
+      "HospitalName": "Specialist Referral 2"
+    },
+    {
+      "ClaimID": "C00091",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-03-02",
+      "Amount": 121532.2,
+      "Status": "Rejected",
+      "PolicyID": "POLA100",
+      "HospitalName": "City General Hospital"
+    },
+    {
+      "ClaimID": "C00092",
+      "PolicyHolderID": "PH0019",
+      "ClaimDate": "2025-07-31",
+      "Amount": 233580.8,
+      "Status": "Approved",
+      "PolicyID": "POLB201",
+      "HospitalName": "Regional Pharmacy"
+    },
+    {
+      "ClaimID": "C00093",
+      "PolicyHolderID": "PH0002",
+      "ClaimDate": "2025-08-07",
+      "Amount": 414472.7,
+      "Status": "Rejected",
+      "PolicyID": "POLC302",
+      "HospitalName": "St. Anthony's Surgical"
+    },
+    {
+      "ClaimID": "C00094",
+      "PolicyHolderID": "PH0004",
+      "ClaimDate": "2025-03-15",
+      "Amount": 222386.6,
+      "Status": "Rejected",
+      "PolicyID": "POLD403",
+      "HospitalName": "Dr. Evans Dental"
+    },
+    {
+      "ClaimID": "C00095",
+      "PolicyHolderID": "PH0019",
+      "ClaimDate": "2025-09-01",
+      "Amount": 292765.6,
+      "Status": "Approved",
+      "PolicyID": "POLE504",
+      "HospitalName": "Auto Repair Specialist"
+    },
+    {
+      "ClaimID": "C00096",
+      "PolicyHolderID": "PH0010",
+      "ClaimDate": "2025-03-27",
+      "Amount": 377539.3,
+      "Status": "Rejected",
+      "PolicyID": "POLF605",
+      "HospitalName": "Riverbend Clinic"
+    },
+    {
+      "ClaimID": "C00097",
+      "PolicyHolderID": "PH0009",
+      "ClaimDate": "2025-06-16",
+      "Amount": 173369,
+      "Status": "Approved",
+      "PolicyID": "POLG706",
+      "HospitalName": "Home Incident Report"
+    },
+    {
+      "ClaimID": "C00098",
+      "PolicyHolderID": "PH0016",
+      "ClaimDate": "2025-07-15",
+      "Amount": 453934.6,
+      "Status": "Rejected",
+      "PolicyID": "POLH807",
+      "HospitalName": "Policyholder Residence"
+    },
+    {
+      "ClaimID": "C00099",
+      "PolicyHolderID": "PH0008",
+      "ClaimDate": "2025-08-27",
+      "Amount": 271746.1,
+      "Status": "Approved",
+      "PolicyID": "POLI908",
+      "HospitalName": "Pet Health Vet"
+    },
+    {
+      "ClaimID": "C00100",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2025-05-10",
+      "Amount": 406293.4,
+      "Status": "Rejected",
+      "PolicyID": "POLJ019",
+      "HospitalName": "Metro General Hospital"
     }
   ],
   "FraudReport": [],
-  "Cases": []
+  "Cases": [
+    {
+      "caseID": 1000,
+      "claimID": "C00001",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00001",
+      "isFraud": true
+    },
+    {
+      "caseID": 1001,
+      "claimID": "C00003",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00003",
+      "isFraud": false
+    },
+    {
+      "caseID": 1002,
+      "claimID": "C00006",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00006",
+      "isFraud": false
+    },
+    {
+      "caseID": 1003,
+      "claimID": "C00007",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00007",
+      "isFraud": false
+    },
+    {
+      "caseID": 1004,
+      "claimID": "C00008",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00008",
+      "isFraud": false
+    },
+    {
+      "caseID": 1005,
+      "claimID": "C00011",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00011",
+      "isFraud": false
+    },
+    {
+      "caseID": 1006,
+      "claimID": "C00012",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00012",
+      "isFraud": false
+    },
+    {
+      "caseID": 1007,
+      "claimID": "C00013",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00013",
+      "isFraud": false
+    },
+    {
+      "caseID": 1008,
+      "claimID": "C00015",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00015",
+      "isFraud": false
+    },
+    {
+      "caseID": 1009,
+      "claimID": "C00017",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00017",
+      "isFraud": true
+    },
+    {
+      "caseID": 1010,
+      "claimID": "C00019",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00019",
+      "isFraud": false
+    },
+    {
+      "caseID": 1011,
+      "claimID": "C00025",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00025",
+      "isFraud": false
+    },
+    {
+      "caseID": 1012,
+      "claimID": "C00029",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00029",
+      "isFraud": false
+    },
+    {
+      "caseID": 1013,
+      "claimID": "C00030",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00030",
+      "isFraud": false
+    },
+    {
+      "caseID": 1014,
+      "claimID": "C00031",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00031",
+      "isFraud": false
+    },
+    {
+      "caseID": 1015,
+      "claimID": "C00038",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00038",
+      "isFraud": true
+    },
+    {
+      "caseID": 1016,
+      "claimID": "C00039",
+      "investigatorID": null,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00039",
+      "isFraud": false
+    },
+    {
+      "caseID": 1017,
+      "claimID": "C00043",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00043",
+      "isFraud": true
+    },
+    {
+      "caseID": 1018,
+      "claimID": "C00048",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00048",
+      "isFraud": true
+    },
+    {
+      "caseID": 1019,
+      "claimID": "C00049",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00049",
+      "isFraud": false
+    },
+    {
+      "caseID": 1020,
+      "claimID": "C00051",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00051",
+      "isFraud": true
+    },
+    {
+      "caseID": 1021,
+      "claimID": "C00058",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00058",
+      "isFraud": true
+    },
+    {
+      "caseID": 1022,
+      "claimID": "C00060",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00060",
+      "isFraud": true
+    },
+    {
+      "caseID": 1023,
+      "claimID": "C00062",
+      "investigatorID": 2,
+      "status": "Fraud Detected",
+      "resolutionNotes": "Case notes for C00062",
+      "isFraud": true
+    },
+    {
+      "caseID": 1024,
+      "claimID": "C00065",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00065",
+      "isFraud": false
+    },
+    {
+      "caseID": 1025,
+      "claimID": "C00066",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00066",
+      "isFraud": false
+    },
+    {
+      "caseID": 1026,
+      "claimID": "C00067",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00067",
+      "isFraud": true
+    },
+    {
+      "caseID": 1027,
+      "claimID": "C00072",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00072",
+      "isFraud": true
+    },
+    {
+      "caseID": 1028,
+      "claimID": "C00073",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00073",
+      "isFraud": false
+    },
+    {
+      "caseID": 1029,
+      "claimID": "C00076",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00076",
+      "isFraud": true
+    },
+    {
+      "caseID": 1030,
+      "claimID": "C00077",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00077",
+      "isFraud": true
+    },
+    {
+      "caseID": 1031,
+      "claimID": "C00078",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00078",
+      "isFraud": false
+    },
+    {
+      "caseID": 1032,
+      "claimID": "C00082",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00082",
+      "isFraud": true
+    },
+    {
+      "caseID": 1033,
+      "claimID": "C00084",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00084",
+      "isFraud": true
+    },
+    {
+      "caseID": 1034,
+      "claimID": "C00087",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00087",
+      "isFraud": true
+    },
+    {
+      "caseID": 1035,
+      "claimID": "C00090",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00090",
+      "isFraud": true
+    },
+    {
+      "caseID": 1036,
+      "claimID": "C00096",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00096",
+      "isFraud": true
+    },
+    {
+      "caseID": 1037,
+      "claimID": "C00097",
+      "investigatorID": 3,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00097",
+      "isFraud": true
+    },
+    {
+      "caseID": 1038,
+      "claimID": "C00098",
+      "investigatorID": 2,
+      "status": "Completed",
+      "resolutionNotes": "Case notes for C00098",
+      "isFraud": true
+    }
+  ]
 }

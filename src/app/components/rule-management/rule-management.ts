@@ -11,11 +11,11 @@ import { FraudRuleService } from '../../services/FraudRule/fraud-rule-service';
   styleUrl: './rule-management.css',
 })
 export class RuleManagement {
-  
+
   private fraudRuleService = inject(FraudRuleService);
 
-  // Observable
-  rules = this.fraudRuleService.getFraudRules();
+  /** 🔥 AUTO-REFRESH RULES FROM SERVICE */
+  rules = this.fraudRuleService.rules$;
 
   selectedRule: any = null;
 
@@ -35,9 +35,11 @@ export class RuleManagement {
   saveChanges() {
     this.fraudRuleService.editRule(this.selectedRule).subscribe({
       next: () => {
-        alert("Rule updated!");
+        alert("Rule updated successfully!");
         this.closeModal();
-        this.rules = this.fraudRuleService.getFraudRules(); // refresh table
+
+        /** 🔥 TRIGGER RULE LIST RELOAD */
+        this.fraudRuleService.refreshRules();
       },
       error: (err) => console.error("Save failed:", err)
     });

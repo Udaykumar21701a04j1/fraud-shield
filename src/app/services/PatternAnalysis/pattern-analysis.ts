@@ -79,10 +79,10 @@ export class PatternAnalysis {
 
   private calculateFraudHistoryPoints(policyHolderID: string | number, allClaims: Claim[]): number {
     const holderClaims = allClaims.filter((c) => c.PolicyHolderID === policyHolderID);
-    const flagged = holderClaims.filter((c) => c.Status === 'Flagged' || c.Status === 'Fraud Detected').length;
+    const rejected = holderClaims.filter((c) => c.Status === 'Rejected' || c.Status === 'Fraud Detected').length;
 
-    if (flagged >= 3) return 60;
-    if (flagged >= 1) return 30;
+    if (rejected >= 3) return 60;
+    if (rejected >= 1) return 30;
     return 0;
   }
 

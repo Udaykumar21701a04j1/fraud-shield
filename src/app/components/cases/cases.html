@@ -1,142 +1,108 @@
 <div class="container-fluid mt-4">
+  <h2 class="mb-4">💼 Case Management Dashboard</h2>
 
-  <h2 class="fw-bold mb-4 text-center">Case Management</h2>
-  <p>{{cases$|async}}</p>
+  <!-- Filters -->
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <label for="investigator-filter" class="form-label">Filter by Investigator:</label>
+      <select id="investigator-filter" class="form-select" (change)="updateInvestigatorFilter($event)">
+        <option value="ALL">All Investigators</option>
+        <option *ngFor="let inv of availableInvestigators" [value]="inv.id">{{ inv.name }}</option>
+      </select>
+    </div>
 
-  <!-- TABLE VIEW -->
+    <div class="col-md-4">
+      <label for="status-filter" class="form-label">Filter by Status:</label>
+      <select id="status-filter" class="form-select" (change)="updateStatusFilter($event)">
+        <option value="ALL">All Status</option>
+        <option *ngFor="let status of availableStatuses" [value]="status">{{ status }}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Table -->
   <div class="table-responsive">
-    <table class="table table-hover table-bordered align-middle shadow-sm">
-      <thead class="table-primary sticky-top">
+    <table class="table table-striped table-hover table-bordered align-middle">
+      <thead class="table-dark">
         <tr>
           <th>Case ID</th>
           <th>Claim ID</th>
           <th>Investigator</th>
           <th>Status</th>
-          <th>Fraud</th>
-          <th>Notes</th>
-          <th>Actions</th>
+          <th>Resolution Notes</th>
+          <th>Is Fraud</th>
+          <th class="text-center">Action</th>
         </tr>
       </thead>
-
       <tbody>
-        
-        <tr *ngFor="let caseItem of cases$ | async">
+        <tr *ngFor="let caseItem of filteredCases$ | async">
+          <!-- Display Mode -->
+          <ng-container *ngIf="editingCaseId !== caseItem.id">
+            <td>{{ caseItem.caseID }}</td>
+            <td>{{ caseItem.claimID }}</td>
+            <td>{{ getInvestigatorName(caseItem.investigatorID) }}</td>
+            <td>
+              <span 
+                class="badge"
+                [ngClass]="{
+                  'bg-success': caseItem.status === CASE_STATUS.COMPLETED,
+                  'bg-warning text-dark': caseItem.status === CASE_STATUS.PENDING,
+                  'bg-danger': caseItem.status === CASE_STATUS.OPEN
+                }"
+              >
+                {{ caseItem.status }}
+              </span>
+            </td>
+            <td class="notes-column">{{ caseItem.resolutionNotes }}</td>
+            <td>
+              <span class="badge" [ngClass]="caseItem.isFraud ? 'bg-danger' : 'bg-primary'">
+                {{ caseItem.isFraud ? 'YES' : 'NO' }}
+              </span>
+            </td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-info text-white" (click)="startEdit(caseItem)">
+                <i class="bi bi-pencil-square"></i> Edit
+              </button>
+            </td>
+          </ng-container>
 
-          <!-- Case ID -->
-          <td class="fw-bold">#{{ caseItem.caseID }}</td>
+          <!-- Edit Mode -->
+          <ng-container *ngIf="editingCaseId === caseItem.id">
+            <td>{{ caseItem.id }}</td>
+            <td>{{ caseItem.claimID }}</td>
 
-          <!-- Claim ID -->
-          <td>{{ caseItem.claimID }}</td>
+            <td>
+              <select class="form-select form-select-sm" [(ngModel)]="investigatorInput">
+                <option [value]="null">Unassigned</option>
+                <option *ngFor="let inv of availableInvestigators" [value]="inv.id">{{ inv.name }}</option>
+              </select>
+            </td>
 
-          <!-- Investigator -->
-          <td>{{ getInvestigatorName(caseItem.investigatorID) || 'Unassigned' }}</td>
+            <td>
+              <select class="form-select form-select-sm" [(ngModel)]="statusInput">
+                <option *ngFor="let status of availableStatuses" [value]="status">{{ status }}</option>
+              </select>
+            </td>
 
-          <!-- Status Badge -->
-          <td>
-            <span class="badge px-3 py-2"
-              [ngClass]="{
-                'bg-secondary': caseItem.status === 'Open',
-                'bg-warning text-dark': caseItem.status === 'Pending',
-                'bg-success': caseItem.status === 'Completed',
-                'bg-danger': caseItem.status === 'Fraud Detected'
-              }">
-              {{ caseItem.status }}
-            </span>
-          </td>
+            <td>
+              <textarea class="form-control form-control-sm" [(ngModel)]="resolutionNotesInput"></textarea>
+            </td>
 
-          <!-- Fraud -->
-          <td>
-            <span *ngIf="caseItem.isFraud" class="text-danger fw-bold">
-              ⚠ Fraud
-            </span>
-            <span *ngIf="!caseItem.isFraud" class="text-muted">
-              -
-            </span>
-          </td>
+            <td class="text-center">
+              <input type="checkbox" class="form-check-input" [(ngModel)]="isFraudInput">
+            </td>
 
-          <!-- Notes -->
-          <td style="max-width: 250px;">
-            <span *ngIf="caseItem.resolutionNotes; else noNotes">
-              {{ caseItem.resolutionNotes }}
-            </span>
-            <ng-template #noNotes>
-              <span class="text-muted fst-italic">No notes</span>
-            </ng-template>
-          </td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-success me-1" (click)="saveEdit()">Save</button>
+              <button class="btn btn-sm btn-secondary" (click)="cancelEdit()">Cancel</button>
+            </td>
+          </ng-container>
+        </tr>
 
-          <!-- Actions -->
-          <td>
-            <button class="btn btn-outline-primary btn-sm"
-              *ngIf="editingCaseId !== caseItem.id"
-              (click)="startEdit(caseItem)">
-              <i class="bi bi-pencil-square"></i>
-            </button>
-          </td>
-
+        <tr *ngIf="(filteredCases$ | async)?.length === 0">
+          <td colspan="7" class="text-center">No cases found for the selected filters.</td>
         </tr>
       </tbody>
     </table>
   </div>
-
-  <!-- EDIT PANEL -->
-  <div *ngIf="editingCaseId" class="mt-4 p-4 bg-light border rounded-3 shadow-sm">
-
-    <h5 class="fw-bold mb-3">Edit Case</h5>
-
-    <div class="row g-3">
-
-      <!-- Investigator -->
-      <div class="col-md-4">
-        <label class="form-label">Assign Investigator</label>
-        <select class="form-select" [(ngModel)]="investigatorInput">
-          <option [ngValue]="null">Unassigned</option>
-          <option *ngFor="let inv of availableInvestigators" [ngValue]="inv.id">
-            {{ inv.name }}
-          </option>
-        </select>
-      </div>
-
-      <!-- Status -->
-      <div class="col-md-4">
-        <label class="form-label">Status</label>
-        <select class="form-select" [(ngModel)]="statusInput">
-          <option *ngFor="let st of availableStatuses" [value]="st">
-            {{ st }}
-          </option>
-        </select>
-      </div>
-
-      <!-- Fraud Checkbox -->
-      <div class="col-md-4 d-flex align-items-end">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox"
-            [(ngModel)]="isFraudInput" id="fraudCheck" />
-          <label class="form-check-label fw-bold text-danger" for="fraudCheck">
-            Mark as Fraud
-          </label>
-        </div>
-      </div>
-
-      <!-- Notes -->
-      <div class="col-12">
-        <label class="form-label">Resolution Notes</label>
-        <textarea class="form-control" rows="3"
-          [(ngModel)]="resolutionNotesInput"></textarea>
-      </div>
-
-    </div>
-
-    <!-- Buttons -->
-    <div class="mt-4 d-flex gap-2">
-      <button class="btn btn-success" (click)="saveEdit()">
-        <i class="bi bi-check-circle"></i> Save
-      </button>
-
-      <button class="btn btn-outline-secondary" (click)="cancelEdit()">
-        <i class="bi bi-x-circle"></i> Cancel
-      </button>
-    </div>
-
-  </div>
-
 </div>

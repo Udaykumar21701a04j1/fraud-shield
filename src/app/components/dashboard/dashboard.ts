@@ -11,6 +11,10 @@ interface StatusModel {
   type: 'success' | 'error' | 'info' | '';
 }
 
+interface ClaimWithFlag extends Claim {
+  isNew?: boolean; // flag for new claims
+}
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
@@ -20,9 +24,9 @@ interface StatusModel {
 })
 export class Dashboard implements OnInit {
 
-  claims!: Observable<Claim[]>;
-  allClaims: Claim[] = [];
-  filteredClaims: Claim[] = [];
+  claims!: Observable<ClaimWithFlag[]>;
+  allClaims: ClaimWithFlag[] = [];
+  filteredClaims: ClaimWithFlag[] = [];
 
   searchQuery: string = '';
   selectedStatus: string = '';
@@ -34,7 +38,7 @@ export class Dashboard implements OnInit {
   violationsCount = 0;
 
   totalClaims$!: Observable<number>;
-  totalPendingClaims$!: Observable<number>
+  totalPendingClaims$!: Observable<number>;
   totalApprovedClaims$!: Observable<number>;
   totalRejectedClaims$!: Observable<number>;
 
@@ -46,11 +50,12 @@ export class Dashboard implements OnInit {
   ngOnInit() {
 
     // Load Claims
-      this.claimsService.getClaims().subscribe(claims => {
-      this.allClaims = claims;
-      this.filteredClaims = [...this.allClaims]; // default
+    this.claimsService.getClaims().subscribe(claims => {
+      // mark all existing claims as not new
+      this.allClaims = claims.map(c => ({ ...c, isNew: false }));
+      this.filteredClaims = [...this.allClaims];
 
-    // Load Dashboard Counters
+      // Dashboard counters
       this.totalClaims$ = this.claimsService.totalClaims$;
       this.totalPendingClaims$ = this.claimsService.totalPendingClaims$;
       this.totalApprovedClaims$ = this.claimsService.totalApprovedClaims$;
@@ -62,6 +67,24 @@ export class Dashboard implements OnInit {
       this.violations = data;
       this.violationsCount = data.length;
     });
+
+    // Subscribe to claims changes to update filtered claims
+    this.claimsService.claims$.subscribe((claims) => {
+      // merge new claims
+      const newClaims: ClaimWithFlag[] = claims.map(c => ({ ...c, isNew: c.isNew ?? false }));
+
+      // prepend newly added claims
+      const existingClaims = this.allClaims.filter(c => !c.isNew);
+      this.allClaims = [...newClaims.filter(c => c.isNew), ...existingClaims];
+
+      this.applyFilters();
+
+      // Remove highlight after 5 seconds
+      setTimeout(() => {
+        this.allClaims = this.allClaims.map(c => ({ ...c, isNew: false }));
+        this.applyFilters();
+      }, 5000);
+    });
   }
 
   /** MAIN FILTER FUNCTION */
@@ -69,7 +92,6 @@ export class Dashboard implements OnInit {
     const query = this.searchQuery.toLowerCase().trim();
 
     this.filteredClaims = this.allClaims.filter(claim => {
-
       const matchesSearch =
         claim.ClaimID.toLowerCase().includes(query) ||
         claim.PolicyID.toLowerCase().includes(query) ||

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { Case } from '../../models/Case';
 import { CasesService } from '../../services/Cases/cases-services';
 import { CASE_STATUS } from '../../services/constants';
@@ -17,13 +17,19 @@ import { UsersService } from '../../services/Users/users-service';
 export class Cases implements OnInit {
 
   public cases$!: Observable<Case[]>;
+  public filteredCases$!: Observable<Case[]>;
   public availableInvestigators: any[] = [];
+  public CASE_STATUS = CASE_STATUS;
 
   public availableStatuses = [
     CASE_STATUS.OPEN,
     CASE_STATUS.PENDING,
     CASE_STATUS.COMPLETED,
   ];
+
+  // Filters
+  public selectedInvestigator: number | 'ALL' = 'ALL';
+  public selectedStatus: string | 'ALL' = 'ALL';
 
   // Editable fields
   public editingCaseId: string | null = null;
@@ -40,6 +46,29 @@ export class Cases implements OnInit {
   ngOnInit(): void {
     this.cases$ = this.casesService.allCases$;
     this.availableInvestigators = this.usersService.getInvestigators() || [];
+
+    this.applyFilters();
+  }
+
+  applyFilters(): void {
+    this.filteredCases$ = this.cases$.pipe(
+      map(cases => cases.filter(c => 
+        (this.selectedInvestigator === 'ALL' || c.investigatorID === this.selectedInvestigator) &&
+        (this.selectedStatus === 'ALL' || c.status === this.selectedStatus)
+      ))
+    );
+  }
+
+  updateInvestigatorFilter(event: Event): void {
+    const value = (event.target as HTMLSelectElement).value;
+    this.selectedInvestigator = value === 'ALL' ? 'ALL' : Number(value);
+    this.applyFilters();
+  }
+
+  updateStatusFilter(event: Event): void {
+    const value = (event.target as HTMLSelectElement).value;
+    this.selectedStatus = value === 'ALL' ? 'ALL' : value;
+    this.applyFilters();
   }
 
   startEdit(caseItem: Case): void {
@@ -64,25 +93,18 @@ export class Cases implements OnInit {
 
   saveEdit(): void {
     if (!this.editingCaseId) return;
-
     const caseId = this.editingCaseId;
-    console.log(`Saving edits for case ${caseId}`);
 
-    // 1. Update investigator
     this.casesService.assignInvestigator(caseId, this.investigatorInput);
-
-
-    // 3. Update status if user changed manually
-    this.casesService.updateCase(caseId, {
-      status: this.statusInput,
-    });
+    this.casesService.updateCase(caseId, { status: this.statusInput });
 
     this.cancelEdit();
   }
 
   getInvestigatorName(id: number | null): string {
+    
     if (id === null) return 'Unassigned';
-    const inv = this.availableInvestigators.find(i => i.id === id);
+    const inv = this.availableInvestigators.find(i => i.id == id);
     return inv ? inv.name : `ID ${id}`;
   }
 }

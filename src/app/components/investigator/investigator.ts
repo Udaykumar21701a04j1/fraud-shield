@@ -23,16 +23,18 @@ export class Investigator implements OnInit, OnDestroy {
 
   selectedFilter: string = 'all';
 
+  selectedCase: Case | null = null;
+
   totalCases = 0;
   openCases = 0;
   pendingCases = 0;
   completedCases = 0;
 
-    formData = {
+  formData = {
     caseId: null as string | null,
     resolutionNotes: '',
     isFraud: false
-    };
+  };
 
 
   logoutLabel = 'Logout';
@@ -45,13 +47,16 @@ export class Investigator implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit(): void {
+    console.log(this.investigatorService.getAssignedCases().source)
     this.investigatorService.getAssignedCases()
       .pipe(takeUntil(this.destroy$))
       .subscribe(cases => {
+        console.log("Actual Investigator Cases =>", cases);
         this.allInvestigatorCases = cases;
         this.updateCounts();
         this.applyFilter(this.selectedFilter);
       });
+
   }
 
   ngOnDestroy(): void {
@@ -95,6 +100,10 @@ export class Investigator implements OnInit, OnDestroy {
     );
 
     this.formData = { caseId: null, resolutionNotes: '', isFraud: false };
+  }
+
+  viewCaseDetails(caseItem: Case): void {
+    this.selectedCase = caseItem;
   }
 
   logout(): void {

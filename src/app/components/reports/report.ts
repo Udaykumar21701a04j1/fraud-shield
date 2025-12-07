@@ -7,6 +7,8 @@ import { Claim } from '../../models/Claim';
 
 import { CasesService } from '../../services/Cases/cases-services';
 import { ClaimsService } from '../../services/Claims/claims-service';
+import { HttpClient } from '@angular/common/http';
+import { RiskScore } from '../../models/RiskScore';
 
 @Component({
   selector: 'app-fraud-and-compalince-dashboard',
@@ -20,6 +22,7 @@ export class FraudAndCompalinceDashboard implements OnInit {
 
   private casesService = inject(CasesService);
   private claimsService = inject(ClaimsService);
+  private http = inject(HttpClient);
 
   // ------------------------------
   // AUTH & APP STATE
@@ -37,6 +40,9 @@ export class FraudAndCompalinceDashboard implements OnInit {
   cases = signal<Case[]>(this.casesService.getCases());
   claims = signal<Claim[]>([]);
   totalClaims = computed(() => this.claims().length);
+
+  // Risk scores (fetched from API) to determine initial HIGH flags
+  riskScores = signal<RiskScore[]>([]);
 
   constructor() {
     // Subscribe to ClaimsService to keep claims signal updated
@@ -82,13 +88,26 @@ export class FraudAndCompalinceDashboard implements OnInit {
   });
 
   // Detection accuracy (simplified example)
+  // Detection accuracy defined as:
+  // (Total cases confirmed fraud AND whose claim was initially flagged HIGH) /
+  // (Total cases whose claim was initially flagged HIGH) * 100
   detectionAccuracy = computed(() => {
-    const trueNegatives = this.cases().filter(c => !c.isFraud && !c.isFraud).length;
-    const total = this.cases().length;
-    if (total === 0) return '0.0';
-    const accuracy = ((this.truePositives() + trueNegatives) / total) * 100;
+    // Filter only completed cases
+    const completedCases = this.cases().filter(c => c.status === 'Completed');
+    
+
+    const totalCompleted = completedCases.length;
+    if (totalCompleted === 0) return '0.0';
+
+    // Count confirmed fraud among completed cases
+    const confirmedFraud = completedCases.filter(c => c.isFraud === true).length;
+
+    // Calculate %
+    const accuracy = (confirmedFraud / totalCompleted) * 100;
+
     return accuracy.toFixed(1);
   });
+
 
   // ------------------------------
   // FINAL METRICS OBJECT

@@ -27,7 +27,7 @@ export class InvestigatorService {
   getAssignedCases(): Observable<Case[]> {
     return this.casesService.allCases$.pipe(
       map((cases) => {
-        const userId = this.getActiveUserId();
+         const userId = Number(this.getActiveUserId());
         if (!userId) return [] as Case[];
         return (cases || []).filter((c) => c.investigatorID === userId);
       })

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { FraudRule } from '../../models/FraudRule';
 import { RuleViolation } from '../../models/RuleViolation';
 import { Claim } from '../../models/Claim';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -15,22 +15,30 @@ export class FraudRuleService {
 
   constructor(private http: HttpClient) {}
 
-  /** GET ALL RULES FROM JSON SERVER **/
-  getFraudRules(): Observable<FraudRule[]> {
-    return this.http.get<FraudRule[]>(this.apiRules);
+  /** 🔄 REFRESH TRIGGER */
+  private refreshRules$ = new BehaviorSubject<void>(undefined);
+
+  /** 🔥 AUTO-REFRESHING RULE LIST */
+  public rules$ = this.refreshRules$.pipe(
+    switchMap(() => this.http.get<FraudRule[]>(this.apiRules))
+  );
+
+  /** MANUAL REFRESH CALL */
+  refreshRules() {
+    this.refreshRules$.next();
   }
 
-  /** UPDATE RULE IN JSON SERVER **/
+  /** UPDATE RULE IN JSON */
   editRule(updatedRule: FraudRule): Observable<FraudRule> {
-    return this.http.put<FraudRule>(`${this.apiRules}/${updatedRule.ruleID}`, updatedRule);
+    return this.http.put<FraudRule>(`${this.apiRules}/${updatedRule.id}`, updatedRule);
   }
 
-  /** GET VIOLATIONS FROM JSON SERVER **/
+  /** GET VIOLATIONS */
   getRuleViolations(): Observable<RuleViolation[]> {
     return this.http.get<RuleViolation[]>(this.apiViolations);
   }
 
-  /** ADD NEW VIOLATION INTO JSON SERVER **/
+  /** ADD VIOLATION */
   private recordViolation(claimID: string, ruleID: string): void {
     const violation: RuleViolation = {
       violationID: this.generateUniqueId(),
@@ -43,13 +51,13 @@ export class FraudRuleService {
       .subscribe(() => console.log("Violation saved:", violation));
   }
 
-  /** APPLY ALL RULES **/
+  /** APPLY ALL RULES */
   applyRules(claims: Claim[], rules: FraudRule[]): void {
     this.applyExcessiveClaimAmountRule(claims, rules);
     this.applyBlockedHospitalsRule(claims, rules);
   }
 
-  /** Rule 1 - Excessive Claim Amount **/
+  /** Rule 1 - Excessive Claim Amount */
   private applyExcessiveClaimAmountRule(claims: Claim[], rules: FraudRule[]): void {
     const rule = rules.find(r => r.ruleName === 'Exclusive Claim Amount');
     if (!rule || !rule.thresholdValue) return;
@@ -61,7 +69,7 @@ export class FraudRuleService {
     });
   }
 
-  /** Rule 2 - Blocked Hospital Rule **/
+  /** Rule 2 - Blocked Hospital Rule */
   private applyBlockedHospitalsRule(claims: Claim[], rules: FraudRule[]): void {
     const rule = rules.find(r => r.ruleName === 'Blocked Hospitals');
     if (!rule || !rule.blockedHospitals) return;
@@ -73,12 +81,12 @@ export class FraudRuleService {
     });
   }
 
-  /** UPDATE STATUS **/
+  /** UPDATE STATUS */
   public updateClaimStatusForViolations(claims: Claim[], violations: RuleViolation[]): void {
     const violatingIDs = new Set(violations.map(v => v.claimID));
     claims.forEach(c => {
       if (violatingIDs.has(c.ClaimID)) {
-        c.Status = 'Fraud Detected';
+        c.Status = 'Rejected';
       }
     });
   }

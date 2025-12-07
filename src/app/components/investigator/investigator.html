@@ -127,10 +127,12 @@
               </button>
 
               <button class="btn btn-sm btn-primary"
-                *ngIf="item.status === CASE_STATUS.COMPLETED">
+                *ngIf="item.status === CASE_STATUS.COMPLETED"
+                data-bs-toggle="modal"
+                data-bs-target="#viewCaseModal"
+                (click)="viewCaseDetails(item)">
                 View
               </button>
-
             </td>
 
           </tr>
@@ -186,3 +188,46 @@
     </div>
   </div>
 </div>
+
+<!-- View Case Details Modal -->
+<div class="modal fade" id="viewCaseModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Case Details</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body" *ngIf="selectedCase">
+
+        <p><strong>Case ID:</strong> {{ selectedCase.caseID }}</p>
+        <p><strong>Claim ID:</strong> {{ selectedCase.claimID }}</p>
+        <p><strong>Investigator ID:</strong> {{ selectedCase.investigatorID }}</p>
+
+        <p>
+          <strong>Status:</strong>
+          <span class="badge bg-success">{{ selectedCase.status }}</span>
+        </p>
+
+        <p><strong>Resolution Notes:</strong></p>
+        <div class="p-2 bg-light rounded border">
+          {{ selectedCase.resolutionNotes || 'No notes available' }}
+        </div>
+
+        <p class="mt-2">
+          <strong>Fraud:</strong>
+          <span class="text-danger fw-bold" *ngIf="selectedCase.isFraud">Yes</span>
+          <span class="text-success fw-bold" *ngIf="!selectedCase.isFraud">No</span>
+        </p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+

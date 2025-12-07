@@ -44,12 +44,11 @@ export class Admin implements OnInit {
     this.cases$ = this.casesService.allCases$;
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   /** ----------------------------
-   *  EXCEL UPLOAD AND ANALYSIS
-   * ----------------------------- */
+   *  EXCEL UPLOAD & RULE ANALYSIS
+   * ---------------------------- */
   async onFileSelected(event: any) {
     const file: File = event.target.files?.[0];
 
@@ -64,9 +63,13 @@ export class Admin implements OnInit {
     try {
       const newClaims = await this.claimsService.parseExcelFile(file);
 
+      // Store new claims in JSON server
       this.claimsService.addClaims(newClaims);
 
-      this.fraudRuleService.getFraudRules().subscribe(rules => {
+      // --------------------------------------------
+      // 🔥 APPLY FRAUD RULES USING AUTO-REFRESH RULES$
+      // --------------------------------------------
+      this.fraudRuleService.rules$.subscribe(rules => {
         this.fraudRuleService.applyRules(newClaims, rules);
       });
 
