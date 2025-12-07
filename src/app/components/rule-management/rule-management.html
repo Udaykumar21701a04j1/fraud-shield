@@ -1,0 +1,82 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4 fw-bold">Fraud Rules Dashboard</h2>
+ 
+  <table class="table table-bordered table-hover">
+    <thead class="table-primary">
+      <tr>
+        <th>Rule ID</th>
+        <th>Rule Name</th>
+        <th>Description</th>
+        <th>Details</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+ 
+    <tbody>
+      <tr *ngFor="let rule of rules |async">
+        <td>{{ rule.ruleID }}</td>
+        <td>{{ rule.ruleName }}</td>
+        <td>{{ rule.description }}</td>
+ 
+        <td>
+          <!-- Show threshold -->
+          <span *ngIf="rule.thresholdValue">Threshold: {{ rule.thresholdValue }}</span>
+ 
+          <!-- Show hospital list -->
+          <span *ngIf="rule.blockedHospitals">
+            {{ rule.blockedHospitals.join(', ') }}
+          </span>
+        </td>
+ 
+        <td>
+          <button class="btn btn-primary btn-sm" (click)="openEditModal(rule)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div id="editRuleModal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+ 
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">
+          Edit Rule - {{ selectedRule?.ruleName }}
+        </h5>
+        <button class="btn-close btn-close-white" (click)="closeModal()"></button>
+      </div>
+ 
+      <div class="modal-body">
+ 
+        <!-- FORM FOR FR001 (Excessive Amount) -->
+        <div *ngIf="selectedRule?.ruleID === 'FR001'">
+          <label class="form-label">Threshold Amount</label>
+          <input type="number" class="form-control"
+                 [(ngModel)]="selectedRule.thresholdValue">
+        </div>
+ 
+        <!-- FORM FOR FR002 (Blocked Hospitals) -->
+        <div *ngIf="selectedRule?.ruleID === 'FR002'">
+          <label class="form-label">Blocked Hospitals</label>
+ 
+          <div *ngFor="let hospital of selectedRule.blockedHospitals; let i = index">
+            <input class="form-control mb-2"
+                   [(ngModel)]="selectedRule.blockedHospitals[i]">
+          </div>
+ 
+          <button class="btn btn-sm btn-success"
+                  (click)="selectedRule.blockedHospitals.push('')">
+            + Add Hospital
+          </button>
+        </div>
+ 
+      </div>
+ 
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeModal()">Close</button>
+        <button class="btn btn-primary" (click)="saveChanges()">Save</button>
+      </div>
+ 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+<div class="container-fluid bg-light min-vh-100 py-4">
+  <div class="container d-flex flex-column align-items-center">
+
+    <!-- Wrapper to limit width -->
+    <div class="w-100" style="max-width: 1100px;">
+      
+      <!-- Header -->
+      <h2 class="display-6 fw-bold mb-4 text-center border-bottom pb-2">
+        Fraud Analytics & Compliance Dashboard
+      </h2>
+
+      <!-- Loading -->
+      @if (!isAuthReady()) {
+        <div class="text-center py-5 text-primary">
+          <div class="spinner-border text-primary" role="status" style="width:2rem;height:2rem"></div>
+          <p class="mt-3">Initializing services...</p>
+        </div>
+      }
+
+      @if (userId() && isAuthReady()) {
+
+        <!-- ✨ Key Metrics Section -->
+        <section class="mb-5">
+          <h3 class="h5 fw-semibold text-secondary mb-3 text-center">Key Compliance Metrics</h3>
+
+          <div class="row g-4 justify-content-center">
+
+            <!-- Metric Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card shadow-lg border-0 rounded-3 p-3 h-100">
+                <div class="card-body text-center">
+                  <p class="text-muted small mb-1">Total Fraud Cases</p>
+                  <p class="h3 fw-bold text-danger mb-0">{{ metrics().TotalFraudCases }}</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Metric Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card shadow-lg p-3 h-100 border-0 rounded-3">
+                <div class="card-body text-center">
+                  <p class="text-muted small mb-1">Fraud Rate (of {{ metrics().TotalClaims }} claims)</p>
+                  <p class="h3 fw-bold text-primary mb-0">{{ metrics().FraudRate }}</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Metric Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card shadow-lg p-3 h-100 border-0 rounded-3">
+                <div class="card-body text-center">
+                  <p class="text-muted small mb-1">Detection Accuracy</p>
+                  <p class="h3 fw-bold text-success mb-0">{{ metrics().DetectionAccuracy }}</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- 📊 Trends Section -->
+        <section class="mb-4">
+          <div class="card shadow-lg border-0 rounded-3">
+            <div class="card-body">
+
+              <h3 class="h6 fw-semibold text-secondary mb-3 text-center">
+                Monthly Fraud Activity (Last 6 Months)
+              </h3>
+
+              <!-- Graph -->
+              <div class="d-flex align-items-end justify-content-around p-3 border rounded bg-white"
+                   style="height:18rem;">
+                @for (month of monthlyData(); track month.name) {
+                  <div class="d-flex flex-column align-items-center justify-content-end h-100"
+                       title="{{month.name}}: {{month.cases}} cases"
+                       style="width:14%;">
+
+                    <!-- Bar -->
+                    <div class="w-100 rounded-top shadow-sm"
+                         [style.height.%]="(month.cases / maxCases()) * 90"
+                         [class.bg-danger]="month.cases > 0"
+                         [class.bg-secondary]="month.cases === 0"
+                         style="transition: height .5s;">
+                    </div>
+
+                    <!-- Label -->
+                    <small class="mt-2 text-muted text-center">{{ month.name }} ({{ month.cases }})</small>
+                  </div>
+                }
+              </div>
+
+              <p class="small mt-3 text-muted text-center">
+                Trend: Fraud is <strong>{{ trendText() }}</strong>
+                ({{metrics().TotalFraudCases}} total cases analyzed).
+              </p>
+
+            </div>
+          </div>
+        </section>
+
+      }
+    </div>
+
+  </div>
+</div>

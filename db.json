@@ -1,0 +1,603 @@
+{
+  "User": [
+    {
+      "id": "1",
+      "name": "John Smith",
+      "email": "bandi@gmail.com",
+      "role": "admin",
+      "password": "Bandi123@"
+    },
+    {
+      "id": "2",
+      "name": "sandeep",
+      "email": "sk@gmail.com",
+      "role": "investigator",
+      "password": "Password3@"
+    },
+    {
+      "id": "3",
+      "name": "uday",
+      "email": "uday@gmail.com",
+      "role": "investigator",
+      "password": "Uday123@"
+    }
+  ],
+  "FraudRule": [
+    {
+      "ruleID": "FR001",
+      "ruleName": "Exclusive Claim Amount",
+      "description": "Triggers when a transaction amount exceeds a predefined threshold.",
+      "thresholdValue": 10000,
+      "id": "a298"
+    },
+    {
+      "ruleID": "FR002",
+      "ruleName": "Blocked Hospitals",
+      "description": "Flags transactions involving hospitals that are on the blocked list.",
+      "blockedHospitals": [
+        "Regional Pharmacy",
+        "St. Anthony's Surgical",
+        "Gandhi Hospital"
+      ],
+      "id": "b8bd"
+    }
+  ],
+  "RuleViolation": [
+  ],
+  "RiskScore": [
+  ],
+  "Claims": [
+    {
+      "ClaimID": "C00001",
+      "PolicyHolderID": "PH0012",
+      "ClaimDate": "2025-09-11",
+      "Amount": 170365,
+      "Status": "Approved",
+      "PolicyID": "POLA100",
+      "HospitalName": "City General Hospital",
+      "id": "a859"
+    },
+    {
+      "ClaimID": "C00002",
+      "PolicyHolderID": "PH0008",
+      "ClaimDate": "2025-03-08",
+      "Amount": 55258.53,
+      "Status": "Approved",
+      "PolicyID": "POLB201",
+      "HospitalName": "Regional Pharmacy",
+      "id": "4457"
+    },
+    {
+      "ClaimID": "C00003",
+      "PolicyHolderID": "PH0012",
+      "ClaimDate": "2025-04-26",
+      "Amount": 147536,
+      "Status": "Approved",
+      "PolicyID": "POLC302",
+      "HospitalName": "St. Anthony's Surgical",
+      "id": "fd83"
+    },
+    {
+      "ClaimID": "C00004",
+      "PolicyHolderID": "PH0020",
+      "ClaimDate": "2025-08-19",
+      "Amount": 18991.54,
+      "Status": "Rejected",
+      "PolicyID": "POLD403",
+      "HospitalName": "Dr. Evans Dental",
+      "id": "eeed"
+    },
+    {
+      "ClaimID": "C00005",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-07-07",
+      "Amount": 365701.3,
+      "Status": "Rejected",
+      "PolicyID": "POLE504",
+      "HospitalName": "Auto Repair Specialist",
+      "id": "f05d"
+    },
+    {
+      "ClaimID": "C00006",
+      "PolicyHolderID": "PH0004",
+      "ClaimDate": "2025-04-17",
+      "Amount": 81300.7,
+      "Status": "Approved",
+      "PolicyID": "POLF605",
+      "HospitalName": "Riverbend Clinic",
+      "id": "b31b"
+    },
+    {
+      "ClaimID": "C00007",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2025-07-24",
+      "Amount": 159464.3,
+      "Status": "Rejected",
+      "PolicyID": "POLG706",
+      "HospitalName": "Home Incident Report",
+      "id": "d558"
+    },
+    {
+      "ClaimID": "C00008",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2025-03-27",
+      "Amount": 466961.3,
+      "Status": "Rejected",
+      "PolicyID": "POLH807",
+      "HospitalName": "Policyholder Residence",
+      "id": "6389"
+    },
+    {
+      "ClaimID": "C00009",
+      "PolicyHolderID": "PH0019",
+      "ClaimDate": "2025-06-20",
+      "Amount": 399588,
+      "Status": "Rejected",
+      "PolicyID": "POLI908",
+      "HospitalName": "Pet Health Vet",
+      "id": "531d"
+    },
+    {
+      "ClaimID": "C00010",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-10-02",
+      "Amount": 327149.7,
+      "Status": "Approved",
+      "PolicyID": "POLJ019",
+      "HospitalName": "Metro General Hospital",
+      "id": "b071"
+    },
+    {
+      "ClaimID": "C00011",
+      "PolicyHolderID": "PH0014",
+      "ClaimDate": "2025-03-30",
+      "Amount": 9533.2,
+      "Status": "Rejected",
+      "PolicyID": "POLA110",
+      "HospitalName": "Quick Care",
+      "id": "04f6"
+    },
+    {
+      "ClaimID": "C00012",
+      "PolicyHolderID": "PH0019",
+      "ClaimDate": "2025-04-13",
+      "Amount": 477154.1,
+      "Status": "Approved",
+      "PolicyID": "POLB211",
+      "HospitalName": "City Physical Therapy",
+      "id": "7dce"
+    },
+    {
+      "ClaimID": "C00013",
+      "PolicyHolderID": "PH0012",
+      "ClaimDate": "2024-12-10",
+      "Amount": 495092.3,
+      "Status": "Rejected",
+      "PolicyID": "POLC312",
+      "HospitalName": "Lab Test Center",
+      "id": "fd9a"
+    },
+    {
+      "ClaimID": "C00014",
+      "PolicyHolderID": "PH0002",
+      "ClaimDate": "2025-05-14",
+      "Amount": 429888.7,
+      "Status": "Approved",
+      "PolicyID": "POLD413",
+      "HospitalName": "State Highway Collision",
+      "id": "f077"
+    },
+    {
+      "ClaimID": "C00015",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2024-12-05",
+      "Amount": 315156.7,
+      "Status": "Rejected",
+      "PolicyID": "POLE514",
+      "HospitalName": "Private Practice Dr.",
+      "id": "9455"
+    },
+    {
+      "ClaimID": "C00016",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2025-10-07",
+      "Amount": 381910,
+      "Status": "Rejected",
+      "PolicyID": "POLF615",
+      "HospitalName": "Prescription Refill",
+      "id": "26d5"
+    },
+    {
+      "ClaimID": "C00017",
+      "PolicyHolderID": "PH0017",
+      "ClaimDate": "2025-02-18",
+      "Amount": 345926.2,
+      "Status": "Rejected",
+      "PolicyID": "POLG716",
+      "HospitalName": "Specialist Clinic B",
+      "id": "3ec2"
+    },
+    {
+      "ClaimID": "C00018",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-06-12",
+      "Amount": 370948.3,
+      "Status": "Rejected",
+      "PolicyID": "POLH817",
+      "HospitalName": "Policyholder Car",
+      "id": "01ee"
+    },
+    {
+      "ClaimID": "C00019",
+      "PolicyHolderID": "PH0008",
+      "ClaimDate": "2025-09-05",
+      "Amount": 10438.61,
+      "Status": "Rejected",
+      "PolicyID": "POLI918",
+      "HospitalName": "Smallest Claim Ever",
+      "id": "0d63"
+    },
+    {
+      "ClaimID": "C00020",
+      "PolicyHolderID": "PH0001",
+      "ClaimDate": "2025-05-26",
+      "Amount": 83752.61,
+      "Status": "Rejected",
+      "PolicyID": "POLJ029",
+      "HospitalName": "General Surgeon’s Office",
+      "id": "4622"
+    },
+    {
+      "ClaimID": "C00021",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2025-02-02",
+      "Amount": 484062.7,
+      "Status": "Rejected",
+      "PolicyID": "POLA120",
+      "HospitalName": "Local Urgent Care",
+      "id": "19b3"
+    },
+    {
+      "ClaimID": "C00022",
+      "PolicyHolderID": "PH0017",
+      "ClaimDate": "2025-09-28",
+      "Amount": 394738.4,
+      "Status": "Rejected",
+      "PolicyID": "POLB221",
+      "HospitalName": "Mercy Hospital Wing",
+      "id": "3882"
+    },
+    {
+      "ClaimID": "C00023",
+      "PolicyHolderID": "PH0014",
+      "ClaimDate": "2025-10-03",
+      "Amount": 177370.5,
+      "Status": "Rejected",
+      "PolicyID": "POLC322",
+      "HospitalName": "Optometrist's Office",
+      "id": "c622"
+    },
+    {
+      "ClaimID": "C00024",
+      "PolicyHolderID": "PH0006",
+      "ClaimDate": "2025-03-12",
+      "Amount": 303377.1,
+      "Status": "Rejected",
+      "PolicyID": "POLD423",
+      "HospitalName": "Auto Body Shop 2",
+      "id": "ec82"
+    },
+    {
+      "ClaimID": "C00025",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2024-12-17",
+      "Amount": 199959.2,
+      "Status": "Approved",
+      "PolicyID": "POLE524",
+      "HospitalName": "Family Doctor A",
+      "id": "8428"
+    },
+    {
+      "ClaimID": "C00026",
+      "PolicyHolderID": "PH0010",
+      "ClaimDate": "2025-01-04",
+      "Amount": 436577.6,
+      "Status": "Rejected",
+      "PolicyID": "POLF625",
+      "HospitalName": "Mail-order Medication",
+      "id": "3046"
+    },
+    {
+      "ClaimID": "C00027",
+      "PolicyHolderID": "PH0010",
+      "ClaimDate": "2024-12-07",
+      "Amount": 78738.61,
+      "Status": "Approved",
+      "PolicyID": "POLG726",
+      "HospitalName": "Trauma Center A",
+      "id": "9a2f"
+    },
+    {
+      "ClaimID": "C00028",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2025-12-01",
+      "Amount": 255518.9,
+      "Status": "Rejected",
+      "PolicyID": "POLH827",
+      "HospitalName": "Policyholder Boat",
+      "id": "4bb7"
+    },
+    {
+      "ClaimID": "C00029",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-01-27",
+      "Amount": 210101,
+      "Status": "Approved",
+      "PolicyID": "POLI928",
+      "HospitalName": "Micro-claim",
+      "id": "9589"
+    },
+    {
+      "ClaimID": "C00030",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2025-01-01",
+      "Amount": 469504.8,
+      "Status": "Rejected",
+      "PolicyID": "POLJ039",
+      "HospitalName": "Community Wellness",
+      "id": "b40f"
+    },
+    {
+      "ClaimID": "C00031",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-06-14",
+      "Amount": 124208.1,
+      "Status": "Approved",
+      "PolicyID": "POLA130",
+      "HospitalName": "General Practitioner",
+      "id": "2717"
+    },
+    {
+      "ClaimID": "C00032",
+      "PolicyHolderID": "PH0020",
+      "ClaimDate": "2025-11-09",
+      "Amount": 171849.2,
+      "Status": "Approved",
+      "PolicyID": "POLB231",
+      "HospitalName": "Large Medical Center",
+      "id": "222a"
+    },
+    {
+      "ClaimID": "C00033",
+      "PolicyHolderID": "PH0001",
+      "ClaimDate": "2025-06-25",
+      "Amount": 343696.9,
+      "Status": "Approved",
+      "PolicyID": "POLC332",
+      "HospitalName": "Physiotherapy B",
+      "id": "5ced"
+    },
+    {
+      "ClaimID": "C00034",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2025-03-26",
+      "Amount": 99896.55,
+      "Status": "Approved",
+      "PolicyID": "POLD433",
+      "HospitalName": "Apartment Fire Damage",
+      "id": "a7b3"
+    },
+    {
+      "ClaimID": "C00035",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-11-07",
+      "Amount": 146097.2,
+      "Status": "Rejected",
+      "PolicyID": "POLE534",
+      "HospitalName": "Specialist Referral",
+      "id": "0f0e"
+    },
+    {
+      "ClaimID": "C00036",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2025-02-06",
+      "Amount": 364196.4,
+      "Status": "Approved",
+      "PolicyID": "POLF635",
+      "HospitalName": "Outpatient Surgery",
+      "id": "8b8c"
+    },
+    {
+      "ClaimID": "C00037",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2025-10-20",
+      "Amount": 234558.5,
+      "Status": "Approved",
+      "PolicyID": "POLG736",
+      "HospitalName": "Emergency Room C",
+      "id": "e782"
+    },
+    {
+      "ClaimID": "C00038",
+      "PolicyHolderID": "PH0016",
+      "ClaimDate": "2025-02-17",
+      "Amount": 392993,
+      "Status": "Approved",
+      "PolicyID": "POLH837",
+      "HospitalName": "Dental Specialist",
+      "id": "fadd"
+    },
+    {
+      "ClaimID": "C00039",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-07-04",
+      "Amount": 91081.41,
+      "Status": "Approved",
+      "PolicyID": "POLI938",
+      "HospitalName": "Minor Illness Claim",
+      "id": "92bc"
+    },
+    {
+      "ClaimID": "C00040",
+      "PolicyHolderID": "PH0010",
+      "ClaimDate": "2025-04-08",
+      "Amount": 389000.5,
+      "Status": "Approved",
+      "PolicyID": "POLJ049",
+      "HospitalName": "Elite Surgical Unit",
+      "id": "eba6"
+    },
+    {
+      "ClaimID": "C00041",
+      "PolicyHolderID": "PH0004",
+      "ClaimDate": "2025-09-28",
+      "Amount": 112102.4,
+      "Status": "Rejected",
+      "PolicyID": "POLA140",
+      "HospitalName": "Pediatric Clinic",
+      "id": "2bf8"
+    },
+    {
+      "ClaimID": "C00042",
+      "PolicyHolderID": "PH0008",
+      "ClaimDate": "2025-02-04",
+      "Amount": 373984.6,
+      "Status": "Approved",
+      "PolicyID": "POLB241",
+      "HospitalName": "Regional Health Center",
+      "id": "22d8"
+    },
+    {
+      "ClaimID": "C00043",
+      "PolicyHolderID": "PH0018",
+      "ClaimDate": "2025-02-14",
+      "Amount": 10912.73,
+      "Status": "Rejected",
+      "PolicyID": "POLC342",
+      "HospitalName": "Walk-in Clinic D",
+      "id": "41dd"
+    },
+    {
+      "ClaimID": "C00044",
+      "PolicyHolderID": "PH0001",
+      "ClaimDate": "2025-07-19",
+      "Amount": 248052,
+      "Status": "Approved",
+      "PolicyID": "POLD443",
+      "HospitalName": "Auto Accident Site 3",
+      "id": "6143"
+    },
+    {
+      "ClaimID": "C00045",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-09-27",
+      "Amount": 471461.3,
+      "Status": "Approved",
+      "PolicyID": "POLE544",
+      "HospitalName": "Specialist Referral 2",
+      "id": "f4ed"
+    },
+    {
+      "ClaimID": "C00046",
+      "PolicyHolderID": "PH0001",
+      "ClaimDate": "2025-04-03",
+      "Amount": 321602,
+      "Status": "Rejected",
+      "PolicyID": "POLA100",
+      "HospitalName": "City General Hospital",
+      "id": "4ae4"
+    },
+    {
+      "ClaimID": "C00047",
+      "PolicyHolderID": "PH0007",
+      "ClaimDate": "2025-01-18",
+      "Amount": 226439.9,
+      "Status": "Approved",
+      "PolicyID": "POLB201",
+      "HospitalName": "Regional Pharmacy",
+      "id": "0baa"
+    },
+    {
+      "ClaimID": "C00048",
+      "PolicyHolderID": "PH0001",
+      "ClaimDate": "2025-03-09",
+      "Amount": 496559.6,
+      "Status": "Rejected",
+      "PolicyID": "POLC302",
+      "HospitalName": "St. Anthony's Surgical",
+      "id": "4c0d"
+    },
+    {
+      "ClaimID": "C00049",
+      "PolicyHolderID": "PH0013",
+      "ClaimDate": "2025-06-18",
+      "Amount": 171649.3,
+      "Status": "Rejected",
+      "PolicyID": "POLD403",
+      "HospitalName": "Dr. Evans Dental",
+      "id": "f4b8"
+    },
+    {
+      "ClaimID": "C00050",
+      "PolicyHolderID": "PH0013",
+      "ClaimDate": "2025-01-05",
+      "Amount": 432885.5,
+      "Status": "Approved",
+      "PolicyID": "POLE504",
+      "HospitalName": "Auto Repair Specialist",
+      "id": "f12f"
+    },
+    {
+      "ClaimID": "C00051",
+      "PolicyHolderID": "PH0017",
+      "ClaimDate": "2025-05-26",
+      "Amount": 253788.1,
+      "Status": "Rejected",
+      "PolicyID": "POLF605",
+      "HospitalName": "Riverbend Clinic",
+      "id": "8733"
+    },
+    {
+      "ClaimID": "C00052",
+      "PolicyHolderID": "PH0011",
+      "ClaimDate": "2025-07-01",
+      "Amount": 356959,
+      "Status": "Rejected",
+      "PolicyID": "POLG706",
+      "HospitalName": "Home Incident Report",
+      "id": "f4fc"
+    },
+    {
+      "ClaimID": "C00053",
+      "PolicyHolderID": "PH0015",
+      "ClaimDate": "2025-11-22",
+      "Amount": 263419.4,
+      "Status": "Rejected",
+      "PolicyID": "POLH807",
+      "HospitalName": "Policyholder Residence",
+      "id": "ed9e"
+    },
+    {
+      "ClaimID": "C00054",
+      "PolicyHolderID": "PH0005",
+      "ClaimDate": "2025-07-05",
+      "Amount": 212050,
+      "Status": "Rejected",
+      "PolicyID": "POLI908",
+      "HospitalName": "Pet Health Vet",
+      "id": "6c95"
+    },
+    {
+      "ClaimID": "C00055",
+      "PolicyHolderID": "PH0016",
+      "ClaimDate": "2025-10-06",
+      "Amount": 252769.1,
+      "Status": "Rejected",
+      "PolicyID": "POLJ019",
+      "HospitalName": "Metro General Hospital",
+      "id": "6c14"
+    }
+  ],
+  "FraudReport": [],
+  "Cases": []
+}

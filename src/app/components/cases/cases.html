@@ -1,0 +1,142 @@
+<div class="container-fluid mt-4">
+
+  <h2 class="fw-bold mb-4 text-center">Case Management</h2>
+  <p>{{cases$|async}}</p>
+
+  <!-- TABLE VIEW -->
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered align-middle shadow-sm">
+      <thead class="table-primary sticky-top">
+        <tr>
+          <th>Case ID</th>
+          <th>Claim ID</th>
+          <th>Investigator</th>
+          <th>Status</th>
+          <th>Fraud</th>
+          <th>Notes</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        
+        <tr *ngFor="let caseItem of cases$ | async">
+
+          <!-- Case ID -->
+          <td class="fw-bold">#{{ caseItem.caseID }}</td>
+
+          <!-- Claim ID -->
+          <td>{{ caseItem.claimID }}</td>
+
+          <!-- Investigator -->
+          <td>{{ getInvestigatorName(caseItem.investigatorID) || 'Unassigned' }}</td>
+
+          <!-- Status Badge -->
+          <td>
+            <span class="badge px-3 py-2"
+              [ngClass]="{
+                'bg-secondary': caseItem.status === 'Open',
+                'bg-warning text-dark': caseItem.status === 'Pending',
+                'bg-success': caseItem.status === 'Completed',
+                'bg-danger': caseItem.status === 'Fraud Detected'
+              }">
+              {{ caseItem.status }}
+            </span>
+          </td>
+
+          <!-- Fraud -->
+          <td>
+            <span *ngIf="caseItem.isFraud" class="text-danger fw-bold">
+              ⚠ Fraud
+            </span>
+            <span *ngIf="!caseItem.isFraud" class="text-muted">
+              -
+            </span>
+          </td>
+
+          <!-- Notes -->
+          <td style="max-width: 250px;">
+            <span *ngIf="caseItem.resolutionNotes; else noNotes">
+              {{ caseItem.resolutionNotes }}
+            </span>
+            <ng-template #noNotes>
+              <span class="text-muted fst-italic">No notes</span>
+            </ng-template>
+          </td>
+
+          <!-- Actions -->
+          <td>
+            <button class="btn btn-outline-primary btn-sm"
+              *ngIf="editingCaseId !== caseItem.id"
+              (click)="startEdit(caseItem)">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- EDIT PANEL -->
+  <div *ngIf="editingCaseId" class="mt-4 p-4 bg-light border rounded-3 shadow-sm">
+
+    <h5 class="fw-bold mb-3">Edit Case</h5>
+
+    <div class="row g-3">
+
+      <!-- Investigator -->
+      <div class="col-md-4">
+        <label class="form-label">Assign Investigator</label>
+        <select class="form-select" [(ngModel)]="investigatorInput">
+          <option [ngValue]="null">Unassigned</option>
+          <option *ngFor="let inv of availableInvestigators" [ngValue]="inv.id">
+            {{ inv.name }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Status -->
+      <div class="col-md-4">
+        <label class="form-label">Status</label>
+        <select class="form-select" [(ngModel)]="statusInput">
+          <option *ngFor="let st of availableStatuses" [value]="st">
+            {{ st }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Fraud Checkbox -->
+      <div class="col-md-4 d-flex align-items-end">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox"
+            [(ngModel)]="isFraudInput" id="fraudCheck" />
+          <label class="form-check-label fw-bold text-danger" for="fraudCheck">
+            Mark as Fraud
+          </label>
+        </div>
+      </div>
+
+      <!-- Notes -->
+      <div class="col-12">
+        <label class="form-label">Resolution Notes</label>
+        <textarea class="form-control" rows="3"
+          [(ngModel)]="resolutionNotesInput"></textarea>
+      </div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-4 d-flex gap-2">
+      <button class="btn btn-success" (click)="saveEdit()">
+        <i class="bi bi-check-circle"></i> Save
+      </button>
+
+      <button class="btn btn-outline-secondary" (click)="cancelEdit()">
+        <i class="bi bi-x-circle"></i> Cancel
+      </button>
+    </div>
+
+  </div>
+
+</div>

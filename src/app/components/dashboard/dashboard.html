@@ -1,0 +1,214 @@
+<!-- Dashboard Header -->
+<h2 class="fw-bold mb-4 text-center">Dashboard Overview</h2>
+
+<!-- Stats Row -->
+<div class="row g-4 mb-4">
+
+            <!-- Total Claims -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-3 stats-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-list-check display-6 text-primary"></i>
+                        <h5 class="mt-3 mb-1 fw-semibold">Total Claims</h5>
+                        <h3 class="fw-bold text-dark">
+                            {{ totalClaims$ | async }}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Claims -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-3 stats-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-hourglass-split display-6 text-warning"></i>
+                        <h5 class="mt-3 mb-1 fw-semibold">Pending</h5>
+                        <h3 class="fw-bold text-dark">
+                            {{ totalPendingClaims$ | async }}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approved Claims -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-3 stats-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-check2-circle display-6 text-success"></i>
+                        <h5 class="mt-3 mb-1 fw-semibold">Approved</h5>
+                        <h3 class="fw-bold text-dark">
+                            {{ totalApprovedClaims$ | async }}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rejected Claims -->
+            <div class="col-md-3">
+                <div class="card shadow-lg border-0 rounded-3 stats-card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-x-circle display-6 text-danger"></i>
+                        <h5 class="mt-3 mb-1 fw-semibold">Rejected</h5>
+                        <h3 class="fw-bold text-dark">
+                            {{ totalRejectedClaims$ | async }}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+
+
+<!-- SEARCH + FILTER BAR -->
+<div class="card shadow-lg mb-4 border-0">
+    <div class="card-body">
+
+        <div class="row g-3 align-items-center">
+
+            <!-- SEARCH BOX -->
+            <div class="col-md-6">
+                <input type="text"
+                       class="form-control form-control-lg"
+                       placeholder="🔍 Search Claims (ID, Policy, Hospital...)"
+                       [(ngModel)]="searchQuery"
+                       (input)="applyFilters()">
+            </div>
+
+            <!-- STATUS FILTER -->
+            <div class="col-md-4">
+                <select class="form-select form-select-lg"
+                        [(ngModel)]="selectedStatus"
+                        (change)="applyFilters()">
+                    <option value="">Filter by Status</option>
+                    <option value="Approved">Approved</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Fraud Detected">Fraud Detected</option>
+                </select>
+            </div>
+
+            <!-- RESET BUTTON -->
+            <div class="col-md-2 d-grid">
+                <button class="btn btn-secondary btn-lg" (click)="resetFilters()">Reset</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container my-5">
+
+    <!-- STATUS ALERT -->
+    <div *ngIf="status.message" 
+        class="alert shadow-sm fade show mt-3"
+        [ngClass]="{
+            'alert-success': status.type === 'success',
+            'alert-danger': status.type === 'error',
+            'alert-info': status.type === 'info'
+        }"
+        role="alert">
+        <h5 class="fw-bold mb-1">
+            {{ status.type === 'success' ? '✔ Success' : status.type === 'error' ? '❌ Error' : 'ℹ Info' }}
+        </h5>
+        <p class="mb-0">{{ status.message }}</p>
+    </div>
+
+    <!-- CLAIMS TABLE -->
+    <div class="card shadow-lg mb-5 border-0 rounded-3">
+
+        <h5 class="card-header bg-primary text-white fw-bold">
+            Recent Claims {{ (claims | async)?.length }}
+        </h5>
+
+        <div class="card-body p-0">
+            <div class="table-responsive" style="max-height: 420px; overflow-y: auto;">
+                <table class="table table-hover mb-0 align-middle">
+                    <thead class="table-primary sticky-top">
+                        <tr>
+                            <th>Claim ID</th>
+                            <th>Policy ID</th>
+                            <th>Holder ID</th>
+                            <th>Amount</th>
+                            <th>Claim Date</th>
+                            <th>Hospital</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let claim of filteredClaims" class="animate-row">
+                            <td><span class="fw-semibold text-primary">{{ claim.ClaimID }}</span></td>
+                            <td>{{ claim.PolicyID }}</td>
+                            <td>{{ claim.PolicyHolderID }}</td>
+                            <td>₹ {{ claim.Amount | number }}</td>
+                            <td>{{ claim.ClaimDate | date:'mediumDate' }}</td>
+                            <td>{{ claim.HospitalName }}</td>
+                            <td>
+                                <span 
+                                  class="badge px-3 py-2"
+                                  [ngClass]="{
+                                      'bg-success': claim.Status === 'Approved',
+                                      'bg-danger': claim.Status === 'Fraud Detected',
+                                      'bg-warning text-dark': claim.Status === 'Pending',
+                                      'bg-secondary': claim.Status === 'Rejected'
+                                  }">
+                                    {{ claim.Status }}
+                                </span>
+                            </td>
+                        </tr>
+
+                        <!-- EMPTY STATE -->
+                        <tr *ngIf="(claims | async)?.length === 0">
+                            <td colspan="7" class="text-center py-4 text-muted">
+                                No claim data available.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIOLATIONS LOG -->
+    <div class="card shadow-lg border-0 rounded-3">
+
+        <h5 class="card-header bg-primary text-white fw-bold">
+            Recent Fraud Violations {{ violationsCount }}
+        </h5>
+
+        <div class="card-body p-0">
+            <div class="table-responsive" style="max-height: 320px; overflow-y: auto;">
+                <table class="table table-bordered table-striped align-middle mb-0">
+                    <thead class="table-primary sticky-top">
+                        <tr>
+                            <th>Violation ID</th>
+                            <th>Claim ID</th>
+                            <th>Rule ID</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let violation of violations" class="animate-row">
+                            <td class="fw-semibold">{{ violation.violationID }}</td>
+                            <td>{{ violation.claimID }}</td>
+                            <td><span class="text-danger fw-bold">{{ violation.ruleID }}</span></td>
+                            <td>{{ violation.violationDate | date:'medium' }}</td>
+                        </tr>
+
+                        <!-- EMPTY STATE -->
+                        <tr *ngIf="violations.length === 0">
+                            <td colspan="4" class="text-center py-4 text-muted">
+                                No violations recorded.
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

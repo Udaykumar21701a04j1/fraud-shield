@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "email": "bandi@gmail.com",
+        "role": "admin",
+        "password": "Bandi123@"
+    },
+    {
+        "id": 4,
+        "name": "Michael Chen",
+        "email": "sk@gmail.com",
+        "role": "investigator",
+        "password": "Password3@"
+    }
+]

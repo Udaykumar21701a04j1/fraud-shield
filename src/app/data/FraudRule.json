@@ -1,0 +1,14 @@
+[
+  {
+    "ruleID": "FR001",
+    "ruleName": "Exclusive Claim Amount",
+    "description": "Triggers when a transaction amount exceeds a predefined threshold.",
+    "thresholdValue": 10000
+  },
+  {
+    "ruleID": "FR002",
+    "ruleName": "Blocked Hospitals",
+    "description": "Flags transactions involving hospitals that are on the blocked list.",
+    "blockedHospitals": ["Regional Pharmacy", "Gandhi Hospital", "City Care Center"]
+  }
+]

@@ -1,0 +1,188 @@
+<div class="container mt-4">
+
+  <!-- Title + Logout -->
+  <div class="d-flex justify-content-between">
+    <h2 class="mb-4 fw-bold">Investigator Dashboard</h2>
+
+    <div class="p-2 bg-light border-bottom">
+      <button class="btn btn-danger btn-sm" (click)="logout()">
+        {{ logoutLabel }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="row g-3">
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card shadow-sm border-primary pointer"
+        [class.bg-light]="selectedFilter === 'all'"
+        (click)="applyFilter('all')">
+
+        <div class="card-body text-center">
+          <h6 class="text-muted">Total Cases</h6>
+          <h3>{{ totalCases }}</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card shadow-sm border-warning pointer"
+        [class.bg-light]="selectedFilter === CASE_STATUS.OPEN"
+        (click)="applyFilter(CASE_STATUS.OPEN)">
+
+        <div class="card-body text-center">
+          <h6 class="text-muted">Open</h6>
+          <h3>{{ openCases }}</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card shadow-sm border-info pointer"
+        [class.bg-light]="selectedFilter === CASE_STATUS.PENDING"
+        (click)="applyFilter(CASE_STATUS.PENDING)">
+
+        <div class="card-body text-center">
+          <h6 class="text-muted">In Progress</h6>
+          <h3>{{ pendingCases }}</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card shadow-sm border-success pointer"
+        [class.bg-light]="selectedFilter === CASE_STATUS.COMPLETED"
+        (click)="applyFilter(CASE_STATUS.COMPLETED)">
+
+        <div class="card-body text-center">
+          <h6 class="text-muted">Completed</h6>
+          <h3>{{ completedCases }}</h3>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Table Section -->
+  <div class="card shadow-sm mt-4">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">Investigation Cases</h5>
+    </div>
+
+    <div class="card-body p-0">
+
+      <table class="table table-striped table-hover mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>Case ID</th>
+            <th>Claim ID</th>
+            <th>Investigator</th>
+            <th>Status</th>
+            <th>Resolution Notes</th>
+            <th class="text-center">Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let item of filteredCases">
+
+            <td>{{ item.caseID }}</td>
+            <td>{{ item.claimID }}</td>
+            <td>{{ item.investigatorID }}</td>
+
+            <!-- Status Badge -->
+            <td>
+              <span class="badge"
+                [ngClass]="{
+                  'bg-warning text-dark': item.status === CASE_STATUS.PENDING,
+                  'bg-danger text-white': item.status === CASE_STATUS.OPEN,
+                  'bg-success': item.status === CASE_STATUS.COMPLETED,
+                }">
+                {{ item.status }}
+              </span>
+            </td>
+
+            <td>{{ item.resolutionNotes }}</td>
+
+            <!-- Actions -->
+            <td class="text-center">
+
+              <button class="btn btn-sm btn-success"
+                *ngIf="item.status === CASE_STATUS.OPEN"
+                (click)="acceptCase(item.id!)">
+                Accept
+              </button>
+
+              <button class="btn btn-sm btn-warning"
+                *ngIf="item.status === CASE_STATUS.PENDING"
+                data-bs-toggle="modal"
+                data-bs-target="#submitModal"
+                (click)="editCase(item.id!)">
+                Submit
+              </button>
+
+              <button class="btn btn-sm btn-primary"
+                *ngIf="item.status === CASE_STATUS.COMPLETED">
+                View
+              </button>
+
+            </td>
+
+          </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="submitModal" data-bs-backdrop="static" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Submit Case Report</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="mb-3">
+          <label class="form-label">Resolution Notes</label>
+          <textarea class="form-control" rows="4" [(ngModel)]="formData.resolutionNotes"></textarea>
+        </div>
+
+        <label class="form-label">Is Fraud?</label>
+        <div class="d-flex gap-3 mb-3">
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="isFraud" [value]="true"
+              [(ngModel)]="formData.isFraud">
+            <label class="form-check-label">Yes</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="isFraud" [value]="false"
+              [(ngModel)]="formData.isFraud">
+            <label class="form-check-label">No</label>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" data-bs-dismiss="modal" (click)="submitCase()">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>

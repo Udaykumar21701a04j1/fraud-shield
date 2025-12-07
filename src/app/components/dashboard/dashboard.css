@@ -1,0 +1,14 @@
+.animate-row {
+    transition: background-color 0.3s ease;
+}
+.animate-row:hover {
+    background-color: #f8f9fa !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 8px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}

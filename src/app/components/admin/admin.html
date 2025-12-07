@@ -1,0 +1,39 @@
+<div class="d-flex">
+    <app-sidebar></app-sidebar>
+
+    <div class="main-content p-4 w-100">
+        <!-- Router Page Content -->
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+<div class="modal fade" id="uploadModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Upload Claims</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="claim" class="form-label">Upload New Claims</label>
+                    <input 
+                        type="file" 
+                        id="claim" 
+                        name="claim" 
+                        class="form-control" 
+                        accept=".xlsx,.xls,.csv"
+                        (change)="onFileSelected($event)" />
+                </div>
+
+                <div *ngIf="loading" class="alert alert-info">
+                    Loading claims...
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
